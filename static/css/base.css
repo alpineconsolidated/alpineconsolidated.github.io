@@ -120,6 +120,7 @@ a {
   font-size: 100%;
   text-decoration: none;
   background: transparent;
+  color: inherit;
 }
 :focus {
   outline: none;
@@ -154,18 +155,26 @@ body {
 
 h1 {
   font-size: 6rem;
+  letter-spacing: 2px;
+  line-height: 7.2rem;
 }
 
 h2 {
   font-size: 3.2rem;
+  letter-spacing: 1.07px;
+  line-height: 3.8rem;
 }
 
 h3 {
   font-size: 2.4rem;
+  letter-spacing: 0.8px;
+  line-height: 2.9rem;
 }
 
 h4 {
   font-size: 2rem;
+  letter-spacing: 0.67px;
+  line-height: 3.2rem;
 }
 
 p {

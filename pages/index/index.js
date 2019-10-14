@@ -1,14 +1,11 @@
-import Page from "../layouts/Page";
+import Page from "../../layouts/Page";
+import Hero from "../../components/Hero";
 import "../../static/css/base.css";
 
 const Index = () => (
   <Page>
-    <div>
-      <h1>i am an h1</h1>
-      <h2>i am an h2</h2>
-      <h3>i am an h3</h3>
-      <h4>i am an h4</h4>
-      <p>Hello from Homepage</p>
+    <div className="box-wide">
+      <Hero></Hero>
     </div>
   </Page>
 );
