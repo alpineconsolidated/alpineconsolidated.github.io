@@ -3,9 +3,8 @@ import styles from "./Navbar.modules.css";
 import { withRouter } from "next/router";
 
 function Navbar(props) {
-  console.log(props.router);
   return (
-    <nav className={`${styles.navbar} box-wide`}>
+    <nav className={`${styles.navbar}`}>
       <div>
         <img src={props.logo}></img>
       </div>
