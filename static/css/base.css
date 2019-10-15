@@ -147,16 +147,12 @@ body {
 
 /* CSS RESET END */
 
-.box-wide {
-  width: 92%;
-  margin: auto;
-  max-width: 132rem;
-}
-
 h1 {
   font-size: 6rem;
   letter-spacing: 2px;
   line-height: 7.2rem;
+  font-family: "montserratblack";
+  margin-bottom: 2.2rem;
 }
 
 h2 {
@@ -175,9 +171,12 @@ h4 {
   font-size: 2rem;
   letter-spacing: 0.67px;
   line-height: 3.2rem;
+  font-family: "merriweatherbold";
+  margin-bottom: 3.2rem;
 }
 
 p {
+  font-family: "montserratregular";
   font-size: 1.6rem;
   line-height: 2.4rem;
   letter-spacing: 0.53px;
@@ -187,6 +186,17 @@ p {
   width: 100%;
   height: auto;
 }
+
+.box-wide {
+  width: 92%;
+  margin: auto;
+  max-width: 132rem;
+}
+
+/* .box-extra-wide {
+  max-width: 132rem;
+  margin: auto;
+} */
 
 @media all and (-ms-high-contrast: none) {
   .box-full {
@@ -325,7 +335,7 @@ p {
     }
   }
 
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 968px) {
     .box-third,
     .box-two-thirds,
     .box-half {

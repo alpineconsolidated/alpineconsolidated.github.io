@@ -1,0 +1,16 @@
+section,
+section.black,
+section.white {
+  padding: 9rem 0;
+}
+
+section.white {
+  background-color: #fff;
+  color: black;
+}
+
+section.black {
+  background-color: #000;
+  color: white;
+  margin-bottom: 9rem;
+}
