@@ -347,12 +347,36 @@ p {
     }
   }
 
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: 4rem;
+      letter-spacing: 1.33px;
+      line-height: 4.8rem;
+    }
+    h2 {
+      font-size: 3.2rem;
+      line-height: 4.2rem;
+    }
+    h3 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    h4 {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+
   @media all and (max-width: 540px) {
     .box-quarter,
     .box-third,
     .box-half,
     .box-two-thirds {
       grid-column: 1 / -1;
+    }
+
+    .box-wide {
+      width: 95%;
     }
   }
 }

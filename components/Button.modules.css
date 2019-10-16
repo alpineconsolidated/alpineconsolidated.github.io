@@ -20,3 +20,14 @@
   color: #2cc84d;
   background-color: transparent;
 }
+
+@media all and (max-width: 540px) {
+  .btn {
+    width: 100%;
+    margin-bottom: 1.6rem;
+    margin-right: 0;
+  }
+  .btn:nth-child(2) {
+    margin-bottom: 0;
+  }
+}

@@ -14,12 +14,10 @@ class Page extends React.Component {
           <link href="/static/css/fonts.css" rel="stylesheet" />
           <link href="/static/css/global.css" rel="stylesheet" />
         </Head>
-        <div className="box-wide">
-          <Navbar
-            logo={this.props.router.route === "/" ? logoAlpine : logoAlpineTEC}
-          ></Navbar>
-          {this.props.children}
-        </div>
+        <Navbar
+          logo={this.props.router.route === "/" ? logoAlpine : logoAlpineTEC}
+        ></Navbar>
+        <div className="box-wide">{this.props.children}</div>
       </>
     );
   }

@@ -1,7 +1,7 @@
 section,
 section.black,
 section.white {
-  padding: 9rem 0;
+  padding: 9rem 10rem;
 }
 
 section.white {
@@ -10,7 +10,28 @@ section.white {
 }
 
 section.black {
-  background-color: #000;
+  background-color: #13100e;
   color: white;
   margin-bottom: 9rem;
+}
+
+.spacer {
+  height: 12rem;
+  width: 100%;
+}
+
+@media all and (max-width: 1024px) {
+  section,
+  section.black,
+  section.white {
+    padding: 8rem 4rem;
+  }
+}
+
+@media all and (max-width: 540px) {
+  section,
+  section.black,
+  section.white {
+    padding: 6rem 2rem;
+  }
 }
