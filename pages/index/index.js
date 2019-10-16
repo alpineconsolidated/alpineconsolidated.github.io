@@ -1,12 +1,17 @@
 import Page from "../../layouts/Page";
 import Hero from "../../components/Hero";
-import "../../static/css/base.css";
+import Parallax from "../../components/Parallax";
 
-const Index = () => (
+import styles from "./index.modules.css";
+
+import triangle1 from "../../static/images/triangle1.png";
+import triangle2 from "../../static/images/triangle2.png";
+
+const Index = props => (
   <Page>
-    <div className="box-wide">
-      <Hero></Hero>
-    </div>
+    <section className={`${styles.hero} black`}>
+      <Hero />
+    </section>
   </Page>
 );
 
