@@ -21,7 +21,7 @@ class Navbar extends React.Component {
             <div className={styles.logo}>
               <img src={this.props.logo}></img>
             </div>
-            <div onClick={this.onMenuClick} className={styles.mobileMenuIcon}>
+            <div onClick={this.onMenuClick} className={styles.burgerMenu}>
               <div
                 className={`${styles.menuLine} ${
                   this.state.closing ? styles.closing : ""
@@ -68,8 +68,10 @@ class Navbar extends React.Component {
               </li>
             </ul>
           </div>
-          {this.state.menuVisible && (
-            <ul className={styles.mobileMenu}>
+        </nav>
+        {this.state.menuVisible && (
+          <div className={styles.mobileMenu}>
+            <ul>
               <li className={styles.menuItem}>
                 <Link href="/">
                   <a
@@ -98,11 +100,9 @@ class Navbar extends React.Component {
                 <a href="#contact">Contact us</a>
               </li>
             </ul>
-          )}
-        </nav>
-        <div
-          className={this.state.closing ? styles.offset : styles.spacer}
-        ></div>
+          </div>
+        )}
+        <div className={styles.spacer}></div>
       </>
     );
   }
