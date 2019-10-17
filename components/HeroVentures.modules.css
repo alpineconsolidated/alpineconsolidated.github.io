@@ -1,0 +1,18 @@
+.textBox {
+  position: relative;
+  z-index: 1;
+}
+
+.text {
+  margin-bottom: 4rem;
+}
+
+.buttons {
+  display: flex;
+}
+
+@media all and (max-width: 540px) {
+  .buttons {
+    display: block;
+  }
+}

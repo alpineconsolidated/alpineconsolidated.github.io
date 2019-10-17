@@ -32,12 +32,6 @@ class Hero extends Component {
             </div>
           </div>
         </div>
-        <div className="box-half">
-          {/* <img
-            className={`${styles.backgroundImage}`}
-            src={backgroundImage}
-          ></img> */}
-        </div>
       </div>
     );
   }

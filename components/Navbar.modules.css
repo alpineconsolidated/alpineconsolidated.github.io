@@ -114,8 +114,8 @@
 
   .mobileMenu ul {
     opacity: 0;
-    animation: slide-down-text 0.8s ease forwards;
-    animation-delay: 0.4s;
+    animation: slide-down-text 0.6s ease forwards;
+    animation-delay: 0.2s;
   }
 
   .burgerMenu {

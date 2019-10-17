@@ -23,13 +23,6 @@
   display: flex;
 }
 
-.backgroundImage {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-height: 63.3rem;
-}
-
 @media all and (max-width: 768px) {
   .specialTitle {
     font-size: 2.4rem;

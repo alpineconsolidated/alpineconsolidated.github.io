@@ -1,0 +1,23 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-image: url("../../static/images/heroTriangle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100% 100%;
+}
+
+@media all and (max-width: 540px) {
+  .hero {
+    background-position: -200% 0;
+    background-size: cover;
+  }
+}
+
+@media all and (max-width: 370px) {
+  .hero {
+    background-position: -50% 0;
+    background-size: cover;
+  }
+}
