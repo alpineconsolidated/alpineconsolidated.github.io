@@ -12,7 +12,6 @@ section.white {
 section.black {
   background-color: #13100e;
   color: white;
-  margin-bottom: 9rem;
 }
 
 .spacer {
@@ -20,18 +19,41 @@ section.black {
   width: 100%;
 }
 
+.noWrap {
+  white-space: nowrap;
+}
+
+.showOnSmallTablet {
+  display: none;
+}
+
+.hideOnSmallTablet {
+  display: block;
+}
+
 @media all and (max-width: 1024px) {
-  section,
-  section.black,
-  section.white {
+  section.black {
     padding: 8rem 4rem;
+  }
+  section.white {
+    padding: 8rem 0;
+  }
+}
+
+@media all and (max-width: 968px) {
+  .showOnSmallTablet {
+    display: block;
+  }
+  .hideOnSmallTablet {
+    display: none;
   }
 }
 
 @media all and (max-width: 540px) {
-  section,
-  section.black,
-  section.white {
+  section.black {
     padding: 6rem 2rem;
+  }
+  section.white {
+    padding: 6rem 0;
   }
 }

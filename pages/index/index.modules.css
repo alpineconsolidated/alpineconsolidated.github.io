@@ -8,6 +8,16 @@
   background-position: 100% 100%;
 }
 
+.textContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* .peopleContainer {
+  display: flex;
+  justify-content: space-between;
+} */
+
 @media all and (max-width: 540px) {
   .hero {
     background-position: 0 0;
