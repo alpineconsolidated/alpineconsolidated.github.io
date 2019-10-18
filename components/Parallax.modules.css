@@ -1,0 +1,11 @@
+.imageContainer {
+  max-width: 34.6rem;
+}
+
+@media all and (max-width: 968px) {
+  .imageContainer {
+    margin: 0 auto;
+    max-width: 24rem;
+    margin-bottom: 3.2rem;
+  }
+}
