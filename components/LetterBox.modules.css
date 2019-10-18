@@ -1,0 +1,50 @@
+.imageBox {
+  display: flex;
+  align-items: center;
+}
+
+.imageContainer {
+  max-width: 45rem;
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+}
+
+.boxesContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.letterBox {
+  max-width: 40rem;
+  margin-right: 2rem;
+}
+
+.letterBox:last-child {
+  margin-right: 0;
+}
+
+.textContent {
+  max-width: 35rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+@media all and (max-width: 968px) {
+  .imageBox {
+    margin: 0 auto;
+  }
+  .imageContainer {
+    max-width: 32.2rem;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .boxesContainer {
+    flex-direction: column;
+  }
+}
