@@ -4,6 +4,12 @@ section.white {
   padding: 9rem 10rem;
 }
 
+section.whiteTEC {
+  background-color: #fff;
+  color: black;
+  padding: 9rem 5rem;
+}
+
 section.white {
   background-color: #fff;
   color: black;
@@ -35,7 +41,8 @@ section.black {
   section.black {
     padding: 8rem 4rem;
   }
-  section.white {
+  section.white,
+  section.whiteTEC {
     padding: 8rem 0;
   }
 }

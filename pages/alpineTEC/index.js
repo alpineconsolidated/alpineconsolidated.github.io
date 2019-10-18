@@ -11,6 +11,10 @@ const AlpineTEC = () => (
     <section className={`${styles.hero} black`}>
       <Hero />
     </section>
+
+    <section className="whiteTEC">
+      <Testimonial />
+    </section>
   </Page>
 );
 

@@ -1,0 +1,27 @@
+.imageBox {
+  display: flex;
+  align-items: center;
+}
+
+.imageContainer {
+  max-width: 49rem;
+}
+.textBox {
+  display: flex;
+  align-items: center;
+}
+.testimonialText {
+  font-family: "montserratregular";
+  font-size: 2rem;
+  letter-spacing: 0.67px;
+  line-height: 3.2rem;
+  margin-bottom: 3.6rem;
+}
+
+@media all and (max-width: 968px) {
+  .imageContainer {
+    max-width: 24rem;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }
+}
