@@ -56,4 +56,7 @@ section.black {
   section.white {
     padding: 6rem 0;
   }
+  .noWrap {
+    white-space: inherit;
+  }
 }

@@ -1,11 +1,15 @@
-.imageContainer {
-  max-width: 34.6rem;
+.smallImage {
+  max-width: 37.3rem;
+}
+
+.bigImage {
+  max-width: 40.6rem;
 }
 
 @media all and (max-width: 968px) {
-  .imageContainer {
-    margin: 0 auto;
+  .smallImage,
+  .bigImage {
     max-width: 24rem;
-    margin-bottom: 3.2rem;
+    margin-bottom: 2.5rem;
   }
 }

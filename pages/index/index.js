@@ -16,7 +16,9 @@ const Index = props => (
     <section className={`white`}>
       <div className="column-grid">
         <div className="hideOnSmallTablet box-half">
-          <Parallax image={triangle1} />
+          <div className={styles.imageContainer}>
+            <Parallax image={{ url: triangle1, id: "1" }} />
+          </div>
         </div>
         <div className={`${styles.textContainer} box-half`}>
           <div>
@@ -29,7 +31,9 @@ const Index = props => (
             </h3>
 
             <div className="showOnSmallTablet">
-              <Parallax image={triangle1} />
+              <div className={styles.imageContainer}>
+                <Parallax image={{ url: triangle1, id: "1" }} />
+              </div>
             </div>
 
             <p>
@@ -40,6 +44,55 @@ const Index = props => (
               in fragmented industries by backing disciplined and practical
               innovators that have redefined business for the 21st century.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className={`white`}>
+      <div className="column-grid">
+        <div className={`box-half`}>
+          <div>
+            <h1 className="noWrap">OUR EXPERIENCE</h1>
+            <h3>
+              We are seasoned investors and entrepreneurs with deep management
+              experience who do more than invest capital.
+            </h3>
+
+            <div className="showOnSmallTablet">
+              <div className={styles.imageContainer}>
+                <Parallax image={{ url: triangle2, id: "2" }} />
+              </div>
+            </div>
+
+            <p>
+              Our team members have experience as founders, investors, directors
+              or management in a number of public and private companies
+              including Travel Services International (NASDAQ: TRVL),
+              Resortquest International (NYSE: RZT), Hotels.Com (NASDAQ: ROOM),
+              Online Travel Corp (LSE:OTC), Great Wolf Resorts (NYSE: WOLF),
+              Orbitz (NASDAQ: ORBZ), YouBet (NASDAQ: UBET) and Angie’s List
+              (NASDAQ: ANGI). Our privately held ventures include Vacationlink
+              (acquired by Kinderhook Industries), AudioNow (acquired by Zeno
+              Media), Espresoh Technologies (acquired by Alpine Consolidated)
+              SIM Partners (acquired by Reputation.com), Signal and ParkWhiz.
+            </p>
+            <br />
+            <br />
+            <p>
+              We are seasoned investors and executives with deep management
+              experience who do more than invest capital. We are “all in” for
+              the Entrepreneurs we support and provide critical services so our
+              ventures can focus on product development and sales.    
+            </p>
+          </div>
+        </div>
+
+        <div className={`box-half hideOnSmallTablet`}>
+          <div
+            style={{ justifyContent: "flex-end" }}
+            className={styles.imageContainer}
+          >
+            <Parallax image={{ url: triangle2, id: "2" }} />
           </div>
         </div>
       </div>

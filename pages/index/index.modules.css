@@ -13,10 +13,22 @@
   align-items: center;
 }
 
+.imageContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 /* .peopleContainer {
   display: flex;
   justify-content: space-between;
 } */
+
+@media all and (max-width: 968px) {
+  .imageContainer {
+    justify-content: center;
+  }
+}
 
 @media all and (max-width: 540px) {
   .hero {
