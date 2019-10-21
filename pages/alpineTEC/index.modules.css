@@ -8,6 +8,32 @@
   background-position: 100% 100%;
 }
 
+.textContainer {
+  display: flex;
+  align-items: center;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.triangleImage {
+  max-width: 50rem;
+}
+
+@media all and (max-width: 968px) {
+  .imageContainer {
+    justify-content: center;
+  }
+
+  .triangleImage {
+    max-width: 24rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
 @media all and (max-width: 540px) {
   .hero {
     background-position: -200% 0;
