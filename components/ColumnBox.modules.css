@@ -1,0 +1,49 @@
+.container {
+  position: relative;
+}
+
+.title {
+  margin-bottom: 10rem;
+  position: relative;
+}
+
+.subtitle {
+  margin-bottom: 1rem;
+}
+
+.textBox {
+  padding: 0 1.5rem;
+}
+
+.textBox:first-child {
+  padding-left: 0;
+}
+
+.textBox:last-child {
+  padding-right: 0;
+}
+
+.path {
+  position: absolute;
+  top: -4rem;
+  left: -10rem;
+}
+
+@media all and (max-width: 990px) {
+  .textBox {
+    margin-bottom: 2rem;
+    padding: 0;
+    padding-right: 2rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .title {
+    margin-bottom: 5rem;
+  }
+
+  .path {
+    top: -10rem;
+    left: -50rem;
+  }
+}

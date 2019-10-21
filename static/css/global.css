@@ -2,12 +2,14 @@ section,
 section.black,
 section.white {
   padding: 9rem 10rem;
+  overflow: hidden;
 }
 
 section.whiteTEC {
   background-color: #fff;
   color: black;
   padding: 9rem 5rem;
+  overflow: hidden;
 }
 
 section.white {
