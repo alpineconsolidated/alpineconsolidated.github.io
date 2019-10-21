@@ -4,7 +4,7 @@ import styles from "./LetterBox.modules.css";
 const LetterBox = () => {
   return (
     <>
-      <div className="column-grid">
+      <div className={`${styles.firstSection} column-grid`}>
         <div className={`${styles.textContainer} box-half`}>
           <div>
             <h1>
@@ -17,19 +17,18 @@ const LetterBox = () => {
             </h3>
           </div>
         </div>
-        <div className={`${styles.imageBox} box-half`}>
-          <div className={styles.imageContainer}>
-            <img className="responsive-image" src={image} />
+        <div className="box-half">
+          <div className={`${styles.imageBox}`}>
+            <div className={styles.imageContainer}>
+              <img className="responsive-image" src={image} />
+            </div>
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <div className={styles.boxesContainer}>
-        <div className={styles.letterBox}>
+      <div className={` column-grid`}>
+        <div className={`${styles.letterBox} box-third`}>
+          <h1 className={styles.bigLetter}>T</h1>
+
           <div className={styles.textContent}>
             <h2 className={styles.title}>TECH</h2>
             <p>
@@ -40,7 +39,9 @@ const LetterBox = () => {
             </p>
           </div>
         </div>
-        <div className={styles.letterBox}>
+        <div className={`${styles.letterBox} box-third`}>
+          <h1 className={styles.bigLetter}>E</h1>
+
           <div className={styles.textContent}>
             <h2 className={styles.title}>EXPERIENCE</h2>
             <p>
@@ -50,7 +51,9 @@ const LetterBox = () => {
             </p>
           </div>
         </div>
-        <div className={styles.letterBox}>
+        <div className={`${styles.letterBox} box-third`}>
+          <h1 className={styles.bigLetter}>C</h1>
+
           <div className={styles.textContent}>
             <h2 className={styles.title}>CAPITAL</h2>
             <p>

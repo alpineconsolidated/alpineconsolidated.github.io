@@ -156,9 +156,10 @@ h1 {
 }
 
 h2 {
-  font-size: 2.4rem;
-  letter-spacing: 0.8px;
-  line-height: 3.2rem;
+  font-size: 3.2rem;
+
+  letter-spacing: 1.07px;
+  line-height: 3.8rem;
   font-family: "montserratextrabold";
 }
 
@@ -332,7 +333,7 @@ p {
   @media all and (max-width: 990px) {
     .box-third,
     .box-two-thirds {
-      grid-column: 1/-1;
+      grid-column: span 6;
     }
 
     .box-quarter {
@@ -341,7 +342,6 @@ p {
   }
 
   @media all and (max-width: 968px) {
-    .box-third,
     .box-two-thirds,
     .box-half {
       grid-column: 1 / -1;
@@ -349,6 +349,12 @@ p {
 
     .box-quarter {
       grid-column: 1 / 6;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    .box-third {
+      grid-column: 1 / -1;
     }
   }
 
@@ -375,7 +381,9 @@ p {
   }
   h2 {
     font-size: 3.2rem;
-    line-height: 4.2rem;
+
+    letter-spacing: 1.07px;
+    line-height: 3.8rem;
   }
   h3 {
     font-size: 2rem;

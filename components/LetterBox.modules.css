@@ -1,15 +1,20 @@
-.imageBox {
+.firstSection {
+  margin-bottom: 15rem;
+}
+
+.textContainer {
+  position: relative;
   display: flex;
   align-items: center;
+}
+
+.imageBox {
+  display: flex;
+  justify-content: center;
 }
 
 .imageContainer {
   max-width: 45rem;
-}
-
-.textContainer {
-  display: flex;
-  align-items: center;
 }
 
 .boxesContainer {
@@ -20,31 +25,69 @@
 .letterBox {
   max-width: 40rem;
   margin-right: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .letterBox:last-child {
   margin-right: 0;
 }
 
+.bigLetter {
+  position: absolute;
+  font-size: 20rem;
+  margin-bottom: 0;
+  color: #2cc84d;
+  opacity: 0.23;
+  left: 0;
+  top: -7.5rem;
+}
+
 .textContent {
-  max-width: 35rem;
+  padding-left: 5rem;
 }
 
 .title {
   margin-bottom: 2rem;
 }
 
-@media all and (max-width: 968px) {
-  .imageBox {
-    margin: 0 auto;
+@media all and (max-width: 990px) {
+  .letterBox {
+    margin: 0;
+    margin-bottom: 12rem;
   }
+}
+
+@media all and (max-width: 968px) {
   .imageContainer {
     max-width: 32.2rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .bigLetter {
+    top: -6rem;
   }
 }
 
 @media all and (max-width: 540px) {
   .boxesContainer {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .letterBox {
+    max-width: 34.1rem;
+    margin: 0;
+    margin-bottom: 12rem;
+  }
+
+  .bigLetter {
+    top: -5.5rem;
+  }
+
+  .textContent {
+    padding-left: 1.5rem;
   }
 }
