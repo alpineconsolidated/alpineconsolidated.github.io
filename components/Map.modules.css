@@ -1,0 +1,62 @@
+.columnLeft {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.columnRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 5.7rem;
+}
+
+.address {
+  display: flex;
+  margin-bottom: 5rem;
+  align-items: center;
+}
+
+.address:last-child {
+  margin-bottom: 0;
+}
+
+.address img {
+  margin-right: 2.7rem;
+}
+
+.locationText {
+  font-size: 2.4rem;
+  letter-spacing: 0.8px;
+  line-height: 2.9rem;
+}
+
+.highlight {
+  color: #2cc84d;
+  font-family: "montserratbold";
+  font-size: 2.4rem;
+  letter-spacing: 0.8px;
+  line-height: 2.9rem;
+}
+
+.mapContainer {
+  width: 76.3rem;
+}
+@media all and (max-width: 768px) {
+  .columnLeft {
+    margin-bottom: 3rem;
+  }
+
+  .title {
+    margin-bottom: 2.7rem;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .mapContainer {
+    width: 30rem;
+  }
+}

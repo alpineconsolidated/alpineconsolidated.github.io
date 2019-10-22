@@ -342,7 +342,6 @@ p {
   }
 
   @media all and (max-width: 968px) {
-    .box-two-thirds,
     .box-half {
       grid-column: 1 / -1;
     }
@@ -353,6 +352,7 @@ p {
   }
 
   @media all and (max-width: 768px) {
+    .box-two-thirds,
     .box-third {
       grid-column: 1 / -1;
     }
