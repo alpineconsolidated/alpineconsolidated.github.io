@@ -112,24 +112,28 @@ const Index = props => (
         </div>
         <div className={styles.peopleContainer}>
           <PersonCard
+            pathOffset="-8rem"
             image={elan}
             name="Elan Blutinger"
             position="Founder & CEO"
             description="founded Alpine in 1996.  Through Alpine he subsequently founded, built and IPO’d multiple public technology and travel companies.  Elan is a former Director of Great Wolf Resorts, Hotels.com […]"
           />
           <PersonCard
+            pathOffset="-14rem"
             image={marcel}
             name="Marcel Barbulescu"
             position="Chief Strategy Officer"
             description="is a leading and recognized technologist in the field of AI, software engineering, and telecommunications. He is the recipient of multiple awards on the use of Artificial Intelligence […]"
           />
           <PersonCard
+            pathOffset="-18rem"
             image={mike}
             name="Mike Sands"
             position="Chief Investment Officer"
             description="was most recently co-founder and CEO of Signal, an enterprise SaaS martech company.  Mike was part of the original Orbitz management team and held the positions of CMO and COO. Mike took the […]"
           />
           <PersonCard
+            pathOffset="-23rem"
             image={tom}
             name="Tom Isaacson"
             position="Chief IP Legal Counsel and Advisory Board member"
