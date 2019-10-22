@@ -45,18 +45,12 @@
 .mapContainer {
   width: 76.3rem;
 }
+
 @media all and (max-width: 768px) {
   .columnLeft {
     margin-bottom: 3rem;
   }
-
   .title {
     margin-bottom: 2.7rem;
-  }
-}
-
-@media all and (max-width: 540px) {
-  .mapContainer {
-    width: 30rem;
   }
 }
