@@ -19,10 +19,22 @@
   height: 100%;
 }
 
-/* .peopleContainer {
+.path {
+  position: absolute;
+  top: -2rem;
+  left: -10rem;
+}
+
+.leadershipTitle {
+  margin-bottom: 6.7rem;
+}
+
+.peopleContainer {
   display: flex;
+  position: relative;
   justify-content: space-between;
-} */
+  flex-wrap: wrap;
+}
 
 @media all and (max-width: 968px) {
   .imageContainer {
@@ -34,5 +46,11 @@
   .hero {
     background-position: 0 0;
     background-size: cover;
+  }
+  .peopleContainer {
+    justify-content: center;
+  }
+  .path {
+    display: none;
   }
 }

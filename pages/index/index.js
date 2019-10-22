@@ -7,6 +7,11 @@ import styles from "./index.modules.css";
 
 import triangle1 from "../../static/images/triangle1.png";
 import triangle2 from "../../static/images/triangle2.png";
+import elan from "../../static/images/elan.svg";
+import marcel from "../../static/images/marcel.svg";
+import mike from "../../static/images/mike.svg";
+import tom from "../../static/images/tom.svg";
+import path from "../../static/images/path.svg";
 
 const Index = props => (
   <Page>
@@ -94,6 +99,42 @@ const Index = props => (
           >
             <Parallax image={{ url: triangle2, id: "2" }} />
           </div>
+        </div>
+      </div>
+    </section>
+    <section className="black">
+      <div style={{ position: "relative" }}>
+        <div className={styles.path}>
+          <img src={path} />
+        </div>
+        <div className={styles.leadershipTitle}>
+          <h1>LEADERSHIP</h1>
+        </div>
+        <div className={styles.peopleContainer}>
+          <PersonCard
+            image={elan}
+            name="Elan Blutinger"
+            position="Founder & CEO"
+            description="founded Alpine in 1996.  Through Alpine he subsequently founded, built and IPO’d multiple public technology and travel companies.  Elan is a former Director of Great Wolf Resorts, Hotels.com […]"
+          />
+          <PersonCard
+            image={marcel}
+            name="Marcel Barbulescu"
+            position="Chief Strategy Officer"
+            description="is a leading and recognized technologist in the field of AI, software engineering, and telecommunications. He is the recipient of multiple awards on the use of Artificial Intelligence […]"
+          />
+          <PersonCard
+            image={mike}
+            name="Mike Sands"
+            position="Chief Investment Officer"
+            description="was most recently co-founder and CEO of Signal, an enterprise SaaS martech company.  Mike was part of the original Orbitz management team and held the positions of CMO and COO. Mike took the […]"
+          />
+          <PersonCard
+            image={tom}
+            name="Tom Isaacson"
+            position="Chief IP Legal Counsel and Advisory Board member"
+            description="shareholder at Polsinelli P.C. Thomas understands the intricacies associated with new technologies, and provides clients with effective patent management and […]"
+          />
         </div>
       </div>
     </section>

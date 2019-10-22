@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 1 25rem;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.name {
+  font-size: 24px;
+  font-family: "montserratbold";
+  letter-spacing: 0.8px;
+  line-height: 29px;
+}
+
+.position {
+  color: #a4a4a4;
+  font-size: 1.5rem;
+  font-family: "montserratbold";
+  letter-spacing: 0.5px;
+  line-height: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.description {
+  font-size: 1.3rem;
+  letter-spacing: 0.43px;
+  line-height: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.readMoreBtn {
+  background-color: transparent;
+  color: #2cc84d;
+  border: none;
+  padding: 0;
+  font-family: "montserratblack";
+  font-size: 1.4rem;
+  letter-spacing: 0.47px;
+  line-height: 1.7rem;
+}
