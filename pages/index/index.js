@@ -2,11 +2,13 @@ import Page from "../../layouts/Page";
 import Hero from "../../components/Hero";
 import Parallax from "../../components/Parallax";
 import Leadership from "../../components/Leadership";
+import ContactForm from "../../components/ContactForm";
 
 import styles from "./index.modules.css";
 
 import triangle1 from "../../static/images/triangle1.png";
 import triangle2 from "../../static/images/triangle2.png";
+import logoAlpine from "../../static/images/AlpineCons_V.svg";
 
 const Index = props => (
   <Page>
@@ -100,8 +102,14 @@ const Index = props => (
     <section className="black">
       <Leadership />
     </section>
-    <section className="white">
-      <h1>contact form</h1>
+    <section>
+      <h1>spacer</h1>
+    </section>
+    <section className={styles.contactSection}>
+      <ContactForm logo={logoAlpine} />
+    </section>
+    <section>
+      <h1>spacer</h1>
     </section>
   </Page>
 );

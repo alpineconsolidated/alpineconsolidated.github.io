@@ -2,6 +2,7 @@
 const withPlugins = require("next-compose-plugins");
 const withCSS = require("@zeit/next-css");
 const withImages = require("next-images");
+require("dotenv").config();
 
 module.exports = withPlugins(
   [
@@ -20,6 +21,11 @@ module.exports = withPlugins(
   {
     webpack: config => {
       return config;
+    }
+  },
+  {
+    env: {
+      SENDGRID_API_KEY: process.env.SENDGRID_API_KEY
     }
   }
 );

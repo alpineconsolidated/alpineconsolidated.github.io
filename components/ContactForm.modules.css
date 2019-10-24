@@ -1,0 +1,23 @@
+.container {
+  margin: 5rem 9.2rem;
+}
+
+.logo {
+  margin-bottom: 3.6rem;
+}
+
+.highlight {
+  font-family: "montserratbold";
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+}
