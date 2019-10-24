@@ -6,7 +6,7 @@ export default async function mailer(req, res) {
   console.log(formData);
 
   const msg = {
-    to: "david.porosnicu@e-spres-oh.com",
+    to: "david94_p@yahoo.com",
     from: "no-reply@e-spres-oh.com",
     subject: "New mail from contact form on -- www.placeholder.com --",
     text: `You are receiving this email because somebody sent a message through the contact form on -- www.placeholder.com --
