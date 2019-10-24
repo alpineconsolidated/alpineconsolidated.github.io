@@ -57,6 +57,9 @@
   .imageContainer {
     justify-content: center;
   }
+  .contactSection {
+    padding: 3rem 4rem;
+  }
 }
 
 @media all and (max-width: 540px) {
@@ -69,5 +72,9 @@
   }
   .path {
     display: none;
+  }
+
+  .contactSection {
+    padding: 4rem 2.4rem;
   }
 }

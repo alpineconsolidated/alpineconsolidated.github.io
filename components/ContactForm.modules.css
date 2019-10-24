@@ -21,3 +21,69 @@
   letter-spacing: 0.4px;
   line-height: 24px;
 }
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 7rem;
+  max-width: 36.3rem;
+}
+
+.label {
+  position: relative;
+  margin-bottom: 3.47rem;
+}
+
+.label::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: white;
+  position: absolute;
+  bottom: -6.73px;
+  left: 0;
+}
+
+.field {
+  position: relative;
+
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: white;
+}
+
+.field::placeholder {
+  color: white;
+}
+
+@media all and (max-width: 968px) {
+  .textContainer {
+    margin-bottom: 2.4rem;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .formContainer {
+    margin: 0;
+    margin-bottom: 8rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .textContainer p {
+    font-size: 1.2rem;
+    letter-spacing: 0.4px;
+    line-height: 2.4rem;
+  }
+}

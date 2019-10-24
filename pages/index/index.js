@@ -103,13 +103,13 @@ const Index = props => (
       <Leadership />
     </section>
     <section>
-      <h1>spacer</h1>
+      <p>-</p>
     </section>
     <section className={styles.contactSection}>
       <ContactForm logo={logoAlpine} />
     </section>
     <section>
-      <h1>spacer</h1>
+      <p>-</p>
     </section>
   </Page>
 );
