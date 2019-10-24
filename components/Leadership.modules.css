@@ -1,0 +1,50 @@
+.leadershipContainer {
+  position: relative;
+}
+
+.personModalContainer {
+  position: relative;
+}
+
+.path {
+  position: absolute;
+  top: -2rem;
+  left: -10rem;
+}
+
+.leadershipTitle {
+  margin-bottom: 6.7rem;
+}
+
+.peopleContainer {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.visible {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 1);
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media all and (max-width: 540px) {
+  .peopleContainer {
+    justify-content: center;
+  }
+  .path {
+    display: none;
+  }
+}

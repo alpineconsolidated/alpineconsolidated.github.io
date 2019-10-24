@@ -1,0 +1,35 @@
+.container {
+  position: relative;
+  margin: 4rem 0 20rem 3rem;
+}
+
+.closeModalIcon {
+  position: absolute;
+  top: -9rem;
+  right: -6rem;
+  cursor: pointer;
+}
+
+.path {
+  position: absolute;
+  bottom: -20rem;
+  left: -13rem;
+}
+
+.personWrapper {
+  display: flex;
+}
+
+.image {
+  margin-right: 8.8rem;
+}
+
+.name {
+  margin-bottom: 1.6rem;
+}
+
+.position {
+  font-size: 24px;
+  letter-spacing: 0.8px;
+  line-height: 32px;
+}

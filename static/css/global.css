@@ -39,6 +39,10 @@ section.black {
   display: block;
 }
 
+.preventScroll {
+  overflow: hidden;
+}
+
 @media all and (max-width: 1024px) {
   section.black {
     padding: 8rem 4rem;

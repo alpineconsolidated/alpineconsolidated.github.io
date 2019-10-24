@@ -14,6 +14,7 @@
 
 .image {
   position: relative;
+  cursor: pointer;
 }
 
 .name {
@@ -21,6 +22,7 @@
   font-family: "montserratbold";
   letter-spacing: 0.8px;
   line-height: 29px;
+  cursor: pointer;
 }
 
 .position {
@@ -48,6 +50,7 @@
   font-size: 1.4rem;
   letter-spacing: 0.47px;
   line-height: 1.7rem;
+  cursor: pointer;
 }
 
 @media all and (min-width: 540px) {
