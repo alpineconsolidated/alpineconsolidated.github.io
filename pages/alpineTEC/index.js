@@ -4,9 +4,11 @@ import Testimonial from "../../components/Testimonial";
 import LetterBox from "../../components/LetterBox";
 import ColumnBox from "../../components/ColumnBox";
 import Map from "../../components/Map";
+import ContactForm from "../../components/ContactForm";
 import styles from "./index.modules.css";
 
 import triangle5 from "../../static/images/triangle5.svg";
+import logoAlpineTEC from "../../static/images/AlpineTEC_V.svg";
 
 const AlpineTEC = () => (
   <Page>
@@ -67,6 +69,9 @@ const AlpineTEC = () => (
     </section>
     <section className="white">
       <Map />
+    </section>
+    <section className="contactSection">
+      <ContactForm logo={logoAlpineTEC} />
     </section>
   </Page>
 );

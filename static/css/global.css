@@ -43,6 +43,24 @@ section.black {
   overflow: hidden;
 }
 
+.contactSection {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  min-height: 78.6rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.78),
+      rgba(0, 0, 0, 0.78)
+    ),
+    url("../../static/images/mountain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 3rem;
+  margin-bottom: 6rem;
+}
+
 @media all and (max-width: 1024px) {
   section.black {
     padding: 8rem 4rem;
@@ -50,6 +68,11 @@ section.black {
   section.white,
   section.whiteTEC {
     padding: 8rem 0;
+  }
+
+  .contactSection {
+    padding: 3rem 4rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -68,6 +91,10 @@ section.black {
   }
   section.white {
     padding: 6rem 0;
+  }
+  .contactSection {
+    padding: 4rem 2.4rem;
+    margin-bottom: 1.2rem;
   }
   .noWrap {
     white-space: inherit;

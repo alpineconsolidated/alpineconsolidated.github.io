@@ -105,11 +105,8 @@ const Index = props => (
     <section>
       <p>-</p>
     </section>
-    <section className={styles.contactSection}>
+    <section className="contactSection">
       <ContactForm logo={logoAlpine} />
-    </section>
-    <section>
-      <p>-</p>
     </section>
   </Page>
 );
