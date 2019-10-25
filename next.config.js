@@ -27,5 +27,8 @@ module.exports = withPlugins(
     env: {
       SENDGRID_API_KEY: process.env.SENDGRID_API_KEY
     }
+  },
+  {
+    target: "serverless"
   }
 );

@@ -11,9 +11,6 @@ import triangle5 from "../../static/images/triangle5.svg";
 import logoAlpineTEC from "../../static/images/AlpineTEC_V.svg";
 
 class AlpineTEC extends React.Component {
-  static getInitialProps(ctx) {
-    return {};
-  }
   render() {
     return (
       <Page>
