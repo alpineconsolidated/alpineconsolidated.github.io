@@ -1,5 +1,6 @@
 import styles from "./ContactForm.modules.css";
 import Button from "../components/Button";
+import Newsletter from "./Newsletter";
 
 class ContactForm extends React.Component {
   state = {
@@ -83,6 +84,9 @@ class ContactForm extends React.Component {
                   </span>
                 </p>
               </div>
+              <div className="hideOnSmallTablet">
+                <Newsletter />
+              </div>
             </div>
             <div className={`box-half`}>
               <form
@@ -133,7 +137,7 @@ class ContactForm extends React.Component {
                   />
                 </label>
 
-                <div>
+                <div className={styles.contactBtnContainer}>
                   <Button
                     onSubmit={this.handleOnSubmit}
                     text="CONTACT US"
@@ -143,6 +147,11 @@ class ContactForm extends React.Component {
                   </Button>
                 </div>
               </form>
+              <div
+                className={`${styles.newsletterContainer} showOnSmallTablet`}
+              >
+                <Newsletter />
+              </div>
             </div>
           </div>
         </div>

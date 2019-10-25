@@ -10,16 +10,8 @@
   font-family: "montserratbold";
 }
 
-.footer {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer p {
-  font-size: 12px;
-  letter-spacing: 0.4px;
-  line-height: 24px;
+.textContainer {
+  margin-bottom: 5.6rem;
 }
 
 .formContainer {
@@ -32,6 +24,10 @@
 .label {
   position: relative;
   margin-bottom: 3.47rem;
+}
+
+.label:nth-child(4) {
+  margin-bottom: 6.5rem;
 }
 
 .label::after {
@@ -47,7 +43,6 @@
 
 .field {
   position: relative;
-
   font-size: 1.5rem;
   line-height: 2.4rem;
   color: white;
@@ -57,17 +52,34 @@
   color: white;
 }
 
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+}
+
+@media all and (max-width: 1024px) {
+  .container {
+    margin: 0;
+  }
+}
+
 @media all and (max-width: 968px) {
   .textContainer {
     margin-bottom: 2.4rem;
   }
 
-  .container {
-    margin: 0;
-  }
-
   .formContainer {
     margin: 0;
+    margin-bottom: 5.6rem;
+  }
+  .newsletterContainer {
     margin-bottom: 8rem;
   }
 }
@@ -85,5 +97,11 @@
     font-size: 1.2rem;
     letter-spacing: 0.4px;
     line-height: 2.4rem;
+  }
+}
+
+@media all and (max-width: 350px) {
+  .footer p {
+    font-size: 11px;
   }
 }
