@@ -50,7 +50,7 @@ class ContactForm extends React.Component {
     e.preventDefault();
 
     this.setState(prevStatus => ({ ...prevStatus, submitting: true }));
-    const res = await fetch("/api/send", {
+    const res = await fetch("/api/sendEmail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
