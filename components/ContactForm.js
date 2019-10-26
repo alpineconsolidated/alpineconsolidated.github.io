@@ -6,8 +6,7 @@ import Newsletter from "./Newsletter";
 
 import styles from "./ContactForm.modules.css";
 
-const ContactForm = ({ values, errors, touched, isSubmitting, logo }) => {
-  console.log(values);
+const ContactForm = ({ status, errors, touched, isSubmitting, logo }) => {
   return (
     <>
       <div className={styles.container}>
@@ -69,6 +68,7 @@ const ContactForm = ({ values, errors, touched, isSubmitting, logo }) => {
                 className={styles.field}
               />
               <div className={styles.underline}></div>
+
               <Field
                 type="text"
                 name="message"
@@ -81,19 +81,20 @@ const ContactForm = ({ values, errors, touched, isSubmitting, logo }) => {
                   <p className={styles.errorMessage}>{errors.message}</p>
                 )}
               </div>
-              {isSubmitting && values.msg === "" ? (
+              {isSubmitting ? (
                 <div>
                   <p>Submitting...</p>
                 </div>
+              ) : status.success ? (
+                <h3>{status.msg}</h3>
               ) : (
                 <div className={styles.contactBtnContainer}>
                   <Button type="submit" text="CONTACT US" contact>
                     contact
                   </Button>
+                  {!isSubmitting && !status.success && <p>{status.msg}</p>}
                 </div>
               )}
-              <div>{values.msg}</div>
-              <div>{errors.msg}</div>
             </Form>
             <div className={`${styles.newsletterContainer} showOnSmallTablet`}>
               <Newsletter />
@@ -121,6 +122,12 @@ export default withFormik({
       message: ""
     };
   },
+  mapPropsToStatus({ msg }) {
+    return {
+      success: false,
+      msg: ""
+    };
+  },
   validationSchema: Yup.object().shape({
     name: Yup.string()
       .required("Name is required")
@@ -137,10 +144,7 @@ export default withFormik({
       .strict()
       .ensure("ensure")
   }),
-  async handleSubmit(
-    values,
-    { resetForm, setErrors, setSubmitting, setValues }
-  ) {
+  async handleSubmit(values, { resetForm, setSubmitting, setStatus }) {
     const res = await fetch("/api/sendEmail", {
       method: "POST",
       headers: {
@@ -153,71 +157,11 @@ export default withFormik({
 
     if (res.status === 200) {
       setSubmitting(false);
-      setTimeout(() => {
-        setValues({ ...values, msg: response.msg });
-      }, 100);
       resetForm();
+      setStatus({ success: response.success, msg: response.msg });
     } else {
       setSubmitting(false);
-      setErrors({ msg: response.msg });
+      setStatus({ msg: response.msg });
     }
   }
 })(ContactForm);
-
-// state = {
-//   name: "",
-//   phone: "",
-//   email: "",
-//   message: "",
-//   submitted: false,
-//   submitting: false,
-//   info: {
-//     error: false,
-//     msg: null
-//   }
-// };
-
-// handleResponse = (status, msg) => {
-//   if (status === 200) {
-//     this.setState({
-//       submitted: true,
-//       submitting: false,
-//       info: { error: false, msg: msg },
-//       email: "",
-//       message: "",
-//       phone: "",
-//       name: ""
-//     });
-//   } else {
-//     this.setState({
-//       info: { error: true, msg: msg }
-//     });
-//   }
-// };
-
-// handleOnChange = e => {
-//   e.persist();
-//   const { name, value } = e.target;
-//   this.setState({ [name]: value });
-// };
-
-// handleOnSubmit = async e => {
-//   const inputs = {
-//     email: this.state.email,
-//     message: this.state.message,
-//     name: this.state.name,
-//     phone: this.state.phone
-//   };
-//   e.preventDefault();
-
-//   this.setState(prevStatus => ({ ...prevStatus, submitting: true }));
-//   const res = await fetch("/api/sendEmail", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json"
-//     },
-//     body: JSON.stringify(inputs)
-//   });
-//   const text = await res.text();
-//   this.handleResponse(res.status, text);
-// };
