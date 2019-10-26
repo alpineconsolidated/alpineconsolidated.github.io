@@ -16,9 +16,11 @@ export default async function sendEmail(req, res) {
 
   try {
     await sgMail.send(msg);
-    res.status(200).send("Message sent successfully.");
+    res.status(200).send({ success: true, msg: "Message sent successfully." });
   } catch (error) {
     console.log("ERROR", error);
-    res.status(400).send("Message not sent.");
+    res
+      .status(400)
+      .send({ success: false, msg: "Message not sent. Please try again." });
   }
 }
