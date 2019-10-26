@@ -10,7 +10,7 @@ export default async function subscribeToNewsletter(req, res) {
   }
 
   const response = await postNewsletterSubscriber(req.body);
-  console.log(response);
+
   response.status === "subscribed"
     ? res.send({ success: true })
     : res.send({ success: false });

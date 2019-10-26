@@ -1,49 +1,56 @@
+import { withFormik, Form, Field } from "formik";
+import * as Yup from "yup";
+
 import axios from "axios";
 
 import styles from "./Newsletter.modules.css";
 
-class Newsletter extends React.Component {
-  state = {
-    email: "",
-    submitMessage: ""
-  };
-
-  handleOnChange = e => {
-    this.setState({ email: e.target.value });
-  };
-
-  handleOnSubmit = async e => {
-    e.preventDefault();
-
-    const data = { email: this.state.email };
-    const res = await axios.post("./api/subscribeToNewsletter", data);
-
-    res.data.success
-      ? this.setState({ email: "", submitMessage: "success" })
-      : this.setState({ submitMessage: "fail" });
-  };
-
-  render() {
-    return (
+const Newsletter = ({ status, touched, isSubmitting }) => {
+  return (
+    <div>
       <div>
-        <div>
-          <h5 className={styles.tempTitle}>Sign up for our newsletter:</h5>
-        </div>
-        <form onSubmit={this.handleOnSubmit} className={styles.inputContainer}>
-          <input
-            className={styles.newsletterInput}
-            type="email"
-            value={this.state.email}
-            placeholder="Enter your email"
-            onChange={this.handleOnChange}
-          />
-          <button onClick={this.handleOnSubmit} className={styles.subscribeBtn}>
-            SUBSCRIBE
-          </button>
-        </form>
+        <h5 className={styles.tempTitle}>Sign up for our newsletter:</h5>
       </div>
-    );
-  }
-}
+      <Form className={styles.inputContainer}>
+        <Field
+          className={styles.newsletterInput}
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+        />
+        <button type="submit" className={styles.subscribeBtn}>
+          SUBSCRIBE
+        </button>
+        <p>{status.submitMessage}</p>
+      </Form>
+    </div>
+  );
+};
 
-export default Newsletter;
+export default withFormik({
+  mapPropsToValues({ email, submitMessage }) {
+    return {
+      email: ""
+    };
+  },
+  mapPropsToStatus({ submitMessage }) {
+    return {
+      submitMessage: ""
+    };
+  },
+  async handleSubmit(values, { resetForm, setSubmitting, setStatus }) {
+    const res = await axios.post("./api/subscribeToNewsletter", {
+      email: values.email
+    });
+    if (res.data.success) {
+      setSubmitting(false);
+      resetForm();
+      setStatus({
+        submitMessage: "Your email has been successfully subscribed!"
+      });
+    } else {
+      setSubmitting(false);
+      setStatus({ submitMessage: "Something went wrong, please try again!" });
+    }
+  }
+})(Newsletter);
