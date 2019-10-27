@@ -3,6 +3,7 @@ import Hero from "../../components/Hero";
 import Parallax from "../../components/Parallax";
 import Leadership from "../../components/Leadership";
 import ContactForm from "../../components/ContactForm";
+import Advisors from "../../components/Advisors";
 
 import styles from "./index.modules.css";
 
@@ -102,8 +103,8 @@ const Index = props => (
     <section className="black">
       <Leadership />
     </section>
-    <section>
-      <p>-</p>
+    <section className="white">
+      <Advisors />
     </section>
     <section className="contactSection">
       <ContactForm logo={logoAlpine} />
