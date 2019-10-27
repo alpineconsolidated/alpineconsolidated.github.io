@@ -21,6 +21,8 @@
   font-size: 1.4rem;
   letter-spacing: 0.47px;
   line-height: 1.7rem;
+  border: none;
+  border-radius: 0;
 }
 
 .newsletterInput::placeholder {
@@ -56,8 +58,14 @@
 }
 
 @media all and (max-width: 540px) {
+  .contactBtnContainer {
+    width: 100%;
+  }
   .inputContainer {
     flex-direction: column;
+  }
+  .inputContainer div {
+    width: 100%;
   }
   .newsletterInput {
     width: 100%;
@@ -66,5 +74,8 @@
   .subscribeBtn {
     width: 100%;
     text-align: center;
+  }
+  .errorMessage {
+    top: 4rem;
   }
 }
