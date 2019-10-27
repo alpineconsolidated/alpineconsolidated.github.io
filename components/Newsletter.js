@@ -5,24 +5,43 @@ import axios from "axios";
 
 import styles from "./Newsletter.modules.css";
 
-const Newsletter = ({ status, touched, isSubmitting }) => {
+const Newsletter = ({ status, errors, touched, isSubmitting }) => {
   return (
     <div>
-      <div>
-        <h5 className={styles.tempTitle}>Sign up for our newsletter:</h5>
-      </div>
-      <Form className={styles.inputContainer}>
-        <Field
-          className={styles.newsletterInput}
-          type="email"
-          name="email"
-          placeholder="Enter your email"
-        />
-        <button type="submit" className={styles.subscribeBtn}>
-          SUBSCRIBE
-        </button>
-        <p>{status.submitMessage}</p>
-      </Form>
+      {isSubmitting ? (
+        <p>Sending...</p>
+      ) : status.success ? (
+        <h3>{status.submitMessage}</h3>
+      ) : (
+        <>
+          <div>
+            <h5 className={styles.tempTitle}>Sign up for our newsletter:</h5>
+          </div>
+          <Form className={styles.inputContainer}>
+            <div>
+              <Field
+                className={styles.newsletterInput}
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+              <div className={styles.errorContainer}>
+                <div className={styles.underline}></div>
+                {touched.email && errors.email && (
+                  <p className={styles.errorMessage}>{errors.email}</p>
+                )}
+              </div>
+            </div>
+            <div className={styles.contactBtnContainer}>
+              <button type="submit" className={styles.subscribeBtn}>
+                SUBSCRIBE
+              </button>
+              {!isSubmitting && !status.success && <p>{status.msg}</p>}
+            </div>
+            <p>{status.submitMessage}</p>
+          </Form>
+        </>
+      )}
     </div>
   );
 };
@@ -35,7 +54,8 @@ export default withFormik({
   },
   mapPropsToStatus({ submitMessage }) {
     return {
-      submitMessage: ""
+      submitMessage: "",
+      success: false
     };
   },
   async handleSubmit(values, { resetForm, setSubmitting, setStatus }) {
@@ -46,11 +66,20 @@ export default withFormik({
       setSubmitting(false);
       resetForm();
       setStatus({
-        submitMessage: "Your email has been successfully subscribed!"
+        submitMessage: "Your email has been successfully subscribed!",
+        success: true
       });
     } else {
       setSubmitting(false);
       setStatus({ submitMessage: "Something went wrong, please try again!" });
     }
-  }
+  },
+  validationSchema: Yup.object().shape({
+    email: Yup.string()
+      .email("Please enter a valid email")
+      .required("Email is required")
+      .strict()
+      .ensure("ensure")
+      .trim("trim")
+  })
 })(Newsletter);

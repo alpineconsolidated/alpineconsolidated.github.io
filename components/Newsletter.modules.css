@@ -44,6 +44,17 @@
   cursor: pointer;
 }
 
+.errorContainer {
+  position: relative;
+}
+
+.errorMessage {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 0;
+  color: red;
+}
+
 @media all and (max-width: 540px) {
   .inputContainer {
     flex-direction: column;
