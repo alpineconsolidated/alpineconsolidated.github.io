@@ -13,6 +13,10 @@ class Page extends React.Component {
           <link href="/static/css/base.css" rel="stylesheet" />
           <link href="/static/css/fonts.css" rel="stylesheet" />
           <link href="/static/css/global.css" rel="stylesheet" />
+          <meta
+            name="viewport"
+            content="initial-scale=1, maximum-scale=1, user-scalable=no"
+          />
         </Head>
         <Navbar
           logo={this.props.router.route === "/" ? logoAlpine : logoAlpineTEC}

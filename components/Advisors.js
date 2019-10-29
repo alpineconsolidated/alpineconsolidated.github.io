@@ -1,6 +1,5 @@
 import styles from "./Advisors.modules.css";
 import greenDownArrow from "../static/images/greenDownArrow.svg";
-import miniMountainOne from "../static/images/mini-mountain1.svg";
 
 const advisors = [
   {
@@ -188,7 +187,9 @@ class Advisors extends React.Component {
               key={person.name}
               onClick={this.showAdvisorModal}
               id={person.name}
-              className={person.showInfo ? styles.black : ""}
+              className={`${person.showInfo ? styles.black : ""}${
+                styles.personContainer
+              }`}
             >
               <div className={styles.person}>
                 <div

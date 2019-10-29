@@ -2,18 +2,31 @@
   margin-bottom: 12.2rem;
 }
 
+.greenDownArrow {
+  display: none;
+}
+
 .peopleContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
+.personContainer {
+  min-width: 17.2rem;
+}
 .person {
   position: relative;
+  margin-bottom: 6.8rem;
+  max-width: 10rem;
 }
 
-.name {
+.name h5 {
   position: relative;
+  font-family: "montserratextrabold";
+  font-size: 16px;
+  letter-spacing: 0.53px;
+  line-height: 19px;
 }
 
 /* .person img {

@@ -10,9 +10,14 @@ import styles from "./index.modules.css";
 import triangle1 from "../../static/images/triangle1.png";
 import triangle2 from "../../static/images/triangle2.png";
 import logoAlpine from "../../static/images/AlpineCons_V.svg";
+import moutains from "../../static/images/mountains-advisors.svg";
+import Head from "next/head";
 
 const Index = props => (
   <Page>
+    <Head>
+      <title>Alpine Consolidated</title>
+    </Head>
     <section className={`${styles.hero} black`}>
       <Hero />
     </section>
@@ -103,7 +108,10 @@ const Index = props => (
     <section className="black">
       <Leadership />
     </section>
-    <section className="white">
+    <section className={`${styles.advisorsSection}`}>
+      <div className={styles.mountains}>
+        <img src={moutains} />
+      </div>
       <Advisors />
     </section>
     <section className="contactSection">
