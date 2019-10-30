@@ -38,13 +38,14 @@
 
 .advisorsSection {
   position: relative;
-  padding: 6rem 4rem;
+  padding: 12rem 4rem;
+  overflow: visible;
 }
 
 .mountains img {
   position: absolute;
   min-width: 100vw;
-  top: 23rem;
+  top: 29rem;
   left: calc(-50vw + 50%);
 }
 
@@ -58,6 +59,9 @@
   .hero {
     background-position: 0 0;
     background-size: cover;
+  }
+  .advisorsSection {
+    padding: 6rem 0;
   }
   .peopleContainer {
     justify-content: center;

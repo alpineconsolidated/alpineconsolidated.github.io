@@ -187,7 +187,7 @@ class Advisors extends React.Component {
               key={person.name}
               onClick={this.showAdvisorModal}
               id={person.name}
-              className={`${person.showInfo ? styles.black : ""}${
+              className={`${person.showInfo ? styles.black : ""} ${
                 styles.personContainer
               }`}
             >

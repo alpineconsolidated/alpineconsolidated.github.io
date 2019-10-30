@@ -8,7 +8,7 @@ import logoAlpineTEC from "../static/images/AlpineTEC_H.svg";
 class Page extends React.Component {
   render() {
     return (
-      <>
+      <div style={{ overflow: "hidden" }}>
         <Head>
           <link href="/static/css/base.css" rel="stylesheet" />
           <link href="/static/css/fonts.css" rel="stylesheet" />
@@ -22,7 +22,7 @@ class Page extends React.Component {
           logo={this.props.router.route === "/" ? logoAlpine : logoAlpineTEC}
         ></Navbar>
         <div className="box-wide">{this.props.children}</div>
-      </>
+      </div>
     );
   }
 }

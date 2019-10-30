@@ -29,11 +29,15 @@
   line-height: 19px;
 }
 
-/* .person img {
-  position: absolute;
-  top: 4rem;
-  left: -6rem;
-} */
+@media all and (max-width: 768px) {
+  .sectionTitle {
+    margin-bottom: 6.2rem;
+  }
+
+  .personContainer {
+    min-width: 15.66rem;
+  }
+}
 
 @media all and (max-width: 540px) {
   .sectionTitle {
@@ -45,11 +49,16 @@
     align-items: flex-start;
   }
 
+  .person {
+    max-width: 100%;
+  }
+
   .name {
     pointer-events: none;
   }
 
   .greenDownArrow {
+    display: block;
     padding-right: 2.4rem;
     pointer-events: none;
   }
