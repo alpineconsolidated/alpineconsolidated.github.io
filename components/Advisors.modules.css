@@ -13,20 +13,82 @@
 }
 
 .personContainer {
-  min-width: 17.2rem;
-}
-.person {
   position: relative;
+  display: flex;
+  min-width: 17.2rem;
   margin-bottom: 6.8rem;
+}
+
+.person {
   max-width: 10rem;
+  cursor: pointer;
 }
 
 .name h5 {
   position: relative;
   font-family: "montserratextrabold";
-  font-size: 16px;
+  font-size: 1.6rem;
   letter-spacing: 0.53px;
-  line-height: 19px;
+  line-height: 1.9rem;
+}
+
+.personContainer:hover .name {
+  color: #2cc84d;
+}
+
+.personModal {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background-color: #13100e;
+  color: #fff;
+  width: 32rem;
+  padding: 4rem 3rem;
+  transform: translateY(calc(-50% + 19px));
+  left: calc(100%);
+}
+
+.reversePersonModal {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background-color: #13100e;
+  color: #fff;
+  width: 32rem;
+  padding: 4rem 3rem;
+  transform: translateY(calc(-50% + 19px));
+  left: calc(-100% - 20rem);
+}
+
+.personContainer:hover .personModal {
+  visibility: visible;
+}
+
+.personContainer:hover .reversePersonModal {
+  visibility: visible;
+}
+
+.personModal_name {
+  color: #2cc84d;
+  font-family: "montserratextrabold";
+  font-size: 2.4rem;
+  letter-spacing: 0.8px;
+  line-height: 2.9rem;
+  margin-bottom: 1.6rem;
+  max-width: 10rem;
+}
+
+.blackTriangle {
+  position: absolute;
+  top: calc(50% - (3.4rem / 2));
+  left: -3.3rem;
+}
+
+.reverseBlackTriangle {
+  position: absolute;
+  top: calc(50% - (3.4rem / 2));
+  right: -3.3rem;
+  transform: rotate(180deg);
 }
 
 @media all and (max-width: 768px) {
