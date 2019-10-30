@@ -49,6 +49,16 @@
   left: calc(-50vw + 50%);
 }
 
+.greyBackground {
+  position: absolute;
+  background-color: #ccc;
+  min-width: 100vw;
+  min-height: 50%;
+  bottom: 0;
+  left: calc(-50vw + 50%);
+  z-index: -1;
+}
+
 @media all and (max-width: 968px) {
   .imageContainer {
     justify-content: center;
@@ -60,9 +70,15 @@
     background-position: 0 0;
     background-size: cover;
   }
+
+  .greyBackground {
+    display: none;
+  }
+
   .advisorsSection {
     padding: 6rem 0;
   }
+
   .peopleContainer {
     justify-content: center;
   }

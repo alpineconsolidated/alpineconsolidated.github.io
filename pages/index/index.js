@@ -2,7 +2,7 @@ import Page from "../../layouts/Page";
 import Hero from "../../components/Hero";
 import Parallax from "../../components/Parallax";
 import Leadership from "../../components/Leadership";
-import ContactForm from "../../components/ContactForm";
+// import ContactForm from "../../components/ContactForm";
 import Advisors from "../../components/Advisors";
 
 import styles from "./index.modules.css";
@@ -112,11 +112,12 @@ const Index = props => (
       <div className={styles.mountains}>
         <img src={moutains} />
       </div>
+      <div className={styles.greyBackground} />
       <Advisors />
     </section>
-    <section className="contactSection">
+    {/* <section className="contactSection">
       <ContactForm logo={logoAlpine} />
-    </section>
+    </section> */}
   </Page>
 );
 

@@ -9,6 +9,7 @@ import ContactForm from "../../components/ContactForm";
 import styles from "./index.modules.css";
 
 import triangle5 from "../../static/images/triangle5.svg";
+
 import logoAlpineTEC from "../../static/images/AlpineTEC_V.svg";
 
 class AlpineTEC extends React.Component {
@@ -72,9 +73,9 @@ class AlpineTEC extends React.Component {
         <section className="white">
           <Map />
         </section>
-        <section className="contactSection">
+        {/* <section className="contactSection">
           <ContactForm logo={logoAlpineTEC} />
-        </section>
+        </section> */}
       </Page>
     );
   }

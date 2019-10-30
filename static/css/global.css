@@ -43,7 +43,13 @@ section.black {
   overflow: hidden;
 }
 
+.contactSectionContainer {
+  background-color: #ccc;
+  padding-bottom: 6rem;
+}
+
 .contactSection {
+  position: relative;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -58,7 +64,6 @@ section.black {
   background-size: cover;
   color: #fff;
   padding: 3rem;
-  margin-bottom: 6rem;
 }
 
 @media all and (max-width: 1024px) {
@@ -70,9 +75,12 @@ section.black {
     padding: 8rem 0;
   }
 
+  .contactSectionContainer {
+    padding-bottom: 3rem;
+  }
+
   .contactSection {
     padding: 3rem 4rem;
-    margin-bottom: 3rem;
   }
 }
 
@@ -89,13 +97,20 @@ section.black {
   section.black {
     padding: 6rem 2rem;
   }
+
   section.white {
     padding: 6rem 0;
   }
+
+  .contactSectionContainer {
+    background-color: #fff;
+    padding-bottom: 1.2rem;
+  }
+
   .contactSection {
     padding: 4rem 2.4rem;
-    margin-bottom: 1.2rem;
   }
+
   .noWrap {
     white-space: inherit;
   }
