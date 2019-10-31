@@ -46,7 +46,7 @@ const people = [
     image: tom,
     pathOffset: "-24rem",
     name: "Tom Isaacson",
-    position: "Chief IP Legal Counsel and Advisory Board member",
+    position: "Chief IP Legal Counsel",
     description:
       "is an equity shareholder at Polsinelli P.C. Thomas understands the intricacies associated with new technologies, and provides clients with effective patent management and protection. Tom focuses on patent and trademark prosecution and litigation, and serves a range of clients, including Fortune 100 companies to start-ups. He is the named inventor on 18 patents.",
     fullDescription:
