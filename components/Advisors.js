@@ -168,25 +168,27 @@ class Advisors extends React.Component {
   }
 
   updateAdvisorCoordinates = throttle(() => {
-    const advisors = this.state.advisors.map(advisor => {
-      if (
-        this.myRef[advisor.name].getBoundingClientRect().x >
-        window.innerWidth / 2.3
-      ) {
+    if (window.innerWidth > 1023) {
+      const advisors = this.state.advisors.map(advisor => {
+        if (
+          this.myRef[advisor.name].getBoundingClientRect().x >
+          window.innerWidth / 2.3
+        ) {
+          return {
+            name: advisor.name,
+            info: advisor.info,
+            isOffset: true
+          };
+        }
         return {
           name: advisor.name,
           info: advisor.info,
-          isOffset: true
+          isOffset: false
         };
-      }
-      return {
-        name: advisor.name,
-        info: advisor.info,
-        isOffset: false
-      };
-    });
+      });
 
-    this.setState({ advisors });
+      this.setState({ advisors });
+    }
   }, 100);
 
   showAdvisorModal = e => {
@@ -211,7 +213,6 @@ class Advisors extends React.Component {
   };
 
   render() {
-    console.log("updated");
     return (
       <div>
         <div className={styles.sectionTitle}>

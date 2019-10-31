@@ -32,63 +32,74 @@
   line-height: 1.9rem;
 }
 
-.personContainer:hover .name {
-  color: #2cc84d;
+@media all and (min-width: 1025px) {
+  .personContainer:hover .name {
+    color: #2cc84d;
+  }
+
+  .personModal {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    background-color: #13100e;
+    color: #fff;
+    width: 32rem;
+    padding: 4rem 3rem;
+    transform: translateY(calc(-50% + 19px));
+    left: calc(100%);
+  }
+
+  .reversePersonModal {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    background-color: #13100e;
+    color: #fff;
+    width: 32rem;
+    padding: 4rem 3rem;
+    transform: translateY(calc(-50% + 19px));
+    left: calc(-100% - 20rem);
+  }
+
+  .personContainer:hover .personModal {
+    visibility: visible;
+  }
+
+  .personContainer:hover .reversePersonModal {
+    visibility: visible;
+  }
+
+  .personModal_name {
+    color: #2cc84d;
+    font-family: "montserratextrabold";
+    font-size: 2.4rem;
+    letter-spacing: 0.8px;
+    line-height: 2.9rem;
+    margin-bottom: 1.6rem;
+    max-width: 10rem;
+  }
+
+  .blackTriangle {
+    position: absolute;
+    top: calc(50% - (3.4rem / 2));
+    left: -3.3rem;
+  }
+
+  .reverseBlackTriangle {
+    position: absolute;
+    top: calc(50% - (3.4rem / 2));
+    right: -3.3rem;
+    transform: rotate(180deg);
+  }
 }
 
-.personModal {
-  visibility: hidden;
-  position: absolute;
-  z-index: 1;
-  background-color: #13100e;
-  color: #fff;
-  width: 32rem;
-  padding: 4rem 3rem;
-  transform: translateY(calc(-50% + 19px));
-  left: calc(100%);
-}
-
-.reversePersonModal {
-  visibility: hidden;
-  position: absolute;
-  z-index: 1;
-  background-color: #13100e;
-  color: #fff;
-  width: 32rem;
-  padding: 4rem 3rem;
-  transform: translateY(calc(-50% + 19px));
-  left: calc(-100% - 20rem);
-}
-
-.personContainer:hover .personModal {
-  visibility: visible;
-}
-
-.personContainer:hover .reversePersonModal {
-  visibility: visible;
-}
-
-.personModal_name {
-  color: #2cc84d;
-  font-family: "montserratextrabold";
-  font-size: 2.4rem;
-  letter-spacing: 0.8px;
-  line-height: 2.9rem;
-  margin-bottom: 1.6rem;
-  max-width: 10rem;
-}
-
-.blackTriangle {
-  position: absolute;
-  top: calc(50% - (3.4rem / 2));
-  left: -3.3rem;
-}
-
-.reverseBlackTriangle {
-  position: absolute;
-  top: calc(50% - (3.4rem / 2));
-  right: -3.3rem;
-  transform: rotate(180deg);
+@media all and (max-width: 1024px) {
+  .personModal {
+    display: none;
+  }
+  .reversePersonModal {
+    display: none;
+  }
 }
 
 @media all and (max-width: 768px) {
@@ -109,6 +120,11 @@
   .peopleContainer {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .personContainer {
+    display: block;
+    margin-bottom: 2.5rem;
   }
 
   .person {
