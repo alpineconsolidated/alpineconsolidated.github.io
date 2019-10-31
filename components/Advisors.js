@@ -3,20 +3,24 @@ import { throttle } from "lodash-es";
 import styles from "./Advisors.modules.css";
 import greenDownArrow from "../static/images/greenDownArrow.svg";
 import blackSmallTriangle from "../static/images/blackSmallTriangle.svg";
+import close from "../static/images/close.svg";
 
 const advisors = [
   {
     name: "ADAM MCGOWAN",
+    showInfo: false,
     info:
       "President and COO of the Salt Lake Organizing Committee for the 2002 Olympic Winter Games; Managing Director, Sorenson Capital; Former Chairman and Board Member, Omniture,(NASDAQ:OMTR). Co-founder Alpine Consolidated, LLC. Co-founder Travel Services International (NASDAQ:TRVL), and Resortquest International (NYSE:RQI)."
   },
   {
     name: "ALAN MELTZER",
+    showInfo: false,
     info:
       "President and COO of the Salt Lake Organizing Committee for the 2002 Olympic Winter Games; Managing Director, Sorenson Capital; Former Chairman and Board Member, Omniture,(NASDAQ:OMTR). Co-founder Alpine Consolidated, LLC. Co-founder Travel Services International (NASDAQ:TRVL), and Resortquest International (NYSE:RQI)."
   },
   {
     name: "CHRISTOPHER ENSLEY",
+    showInfo: false,
     info:
       "President and COO of the Salt Lake Organizing Committee for the 2002 Olympic Winter Games; Managing Director, Sorenson Capital; Former Chairman and Board Member, Omniture,(NASDAQ:OMTR). Co-founder Alpine Consolidated, LLC. Co-founder Travel Services International (NASDAQ:TRVL), and Resortquest International (NYSE:RQI)."
   },
@@ -155,61 +159,65 @@ const advisors = [
 class Advisors extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { advisors: advisors };
+    this.state = { advisors: advisors, pageWidth: "" };
     this.myRef = [];
   }
 
   componentDidMount() {
+    window.addEventListener("resize", this.getPageInnerWidth);
     window.addEventListener("resize", this.updateAdvisorCoordinates);
+    this.getPageInnerWidth();
+    this.updateAdvisorCoordinates();
   }
 
   componentWillUnmount() {
+    window.removeEventListener("resize", this.getPageInnerWidth);
     window.removeEventListener("resize", this.updateAdvisorCoordinates);
   }
 
+  getPageInnerWidth = throttle(() => {
+    this.setState({ pageWidth: window.innerWidth });
+  }, 100);
+
   updateAdvisorCoordinates = throttle(() => {
-    if (window.innerWidth > 1023) {
-      const advisors = this.state.advisors.map(advisor => {
-        if (
-          this.myRef[advisor.name].getBoundingClientRect().x >
-          window.innerWidth / 2.3
-        ) {
-          return {
-            name: advisor.name,
-            info: advisor.info,
-            isOffset: true
-          };
-        }
+    const advisors = this.state.advisors.map(advisor => {
+      if (
+        this.myRef[advisor.name].getBoundingClientRect().x >
+        window.innerWidth / 2.3
+      ) {
         return {
           name: advisor.name,
           info: advisor.info,
-          isOffset: false
+          isOffset: true
         };
-      });
+      }
+      return {
+        name: advisor.name,
+        info: advisor.info,
+        isOffset: false
+      };
+    });
 
-      this.setState({ advisors });
-    }
+    this.setState({ advisors });
   }, 100);
 
   showAdvisorModal = e => {
-    const target = this.state.advisors.filter(
-      advisor => advisor.name === e.target.id
-    );
+    if (this.state.pageWidth <= 1024) {
+      const newAdvisors = this.state.advisors.map(advisor => {
+        if (advisor.name === e.target.id) {
+          return {
+            ...advisor,
+            showInfo: advisor.showInfo ? false : true
+          };
+        }
+        return {
+          ...advisor,
+          showInfo: false
+        };
+      });
 
-    const updatedAdvisor = {
-      name: target[0].name,
-      info: target[0].info,
-      showInfo: !target[0].showInfo
-    };
-
-    const newAdvisors = this.state.advisors.map(advisor => {
-      if (advisor.name === updatedAdvisor.name) {
-        return updatedAdvisor;
-      }
-      return advisor;
-    });
-
-    this.setState({ advisors: newAdvisors });
+      this.setState({ advisors: newAdvisors });
+    }
   };
 
   render() {
@@ -277,6 +285,27 @@ class Advisors extends React.Component {
                   <p className={styles.info}>{person.info}</p>
                 ) : (
                   ""
+                )}
+                {person.showInfo && (
+                  <div
+                    className={
+                      person.isOffset
+                        ? styles.infoTabletReverse
+                        : styles.infoTablet
+                    }
+                  >
+                    {" "}
+                    <img
+                      className={
+                        person.isOffset
+                          ? styles.reverseBlackTriangle
+                          : styles.blackTriangle
+                      }
+                      src={blackSmallTriangle}
+                    />
+                    <h4 className={styles.infoTablet_name}>{person.name}</h4>
+                    <p>{person.info}</p>
+                  </div>
                 )}
               </div>
             );

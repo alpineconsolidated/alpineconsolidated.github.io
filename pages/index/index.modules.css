@@ -65,14 +65,30 @@
   }
 }
 
-@media all and (max-width: 540px) {
-  .hero {
-    background-position: 0 0;
-    background-size: cover;
+@media all and (max-width: 768px) {
+  .mountains img {
+    top: 21rem;
+  }
+
+  .greyBackground {
+    min-height: 60%;
+  }
+}
+
+@media all and (max-width: 580px) {
+  .mountains img {
+    display: none;
   }
 
   .greyBackground {
     display: none;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .hero {
+    background-position: 0 0;
+    background-size: cover;
   }
 
   .advisorsSection {
@@ -83,9 +99,6 @@
     justify-content: center;
   }
 
-  .mountains img {
-    display: none;
-  }
   .path {
     display: none;
   }

@@ -2,7 +2,6 @@ import styles from "./PersonModal.modules.css";
 import close from "../static/images/close.svg";
 
 const PersonModal = props => {
-  console.log("person modal", props);
   return (
     <div className={styles.container}>
       <div onClick={props.hidePersonModal} className={styles.closeModalIcon}>

@@ -22,6 +22,11 @@
 .person {
   max-width: 10rem;
   cursor: pointer;
+  pointer-events: none;
+}
+
+.name {
+  pointer-events: none;
 }
 
 .name h5 {
@@ -30,6 +35,11 @@
   font-size: 1.6rem;
   letter-spacing: 0.53px;
   line-height: 1.9rem;
+  pointer-events: none;
+}
+
+.close {
+  display: none;
 }
 
 @media all and (min-width: 1025px) {
@@ -97,8 +107,74 @@
   .personModal {
     display: none;
   }
+
   .reversePersonModal {
     display: none;
+  }
+
+  .greenUpArrow {
+    display: none;
+  }
+
+  .personContainer {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .info {
+    display: none;
+  }
+
+  .black .name {
+    color: #2cc84d;
+  }
+
+  .infoTablet {
+    position: absolute;
+    z-index: 1;
+    background-color: #13100e;
+    color: #fff;
+    width: 32rem;
+    padding: 4rem 3rem;
+    top: calc(100% + 4rem);
+    left: 0;
+    transform: translateX(-3.2rem);
+  }
+
+  .infoTabletReverse {
+    position: absolute;
+    z-index: 1;
+    background-color: #13100e;
+    color: #fff;
+    width: 32rem;
+    padding: 4rem 3rem;
+    top: calc(100% + 4rem);
+    right: 0;
+    transform: translateX(-3.2rem);
+  }
+
+  .infoTablet_name {
+    color: #2cc84d;
+    font-family: "montserratextrabold";
+    font-size: 2.4rem;
+    letter-spacing: 0.8px;
+    line-height: 2.9rem;
+    margin-bottom: 1.6rem;
+    max-width: 10rem;
+  }
+
+  .blackTriangle {
+    position: absolute;
+    top: -3.3rem;
+    left: 3.2rem;
+    transform: rotate(90deg);
+  }
+
+  .reverseBlackTriangle {
+    position: absolute;
+    top: -3.3rem;
+    right: 3.2rem;
+    transform: rotate(90deg);
   }
 }
 
@@ -112,9 +188,13 @@
   }
 }
 
-@media all and (max-width: 540px) {
+@media all and (max-width: 580px) {
   .sectionTitle {
     margin-bottom: 4rem;
+  }
+
+  .infoTablet {
+    display: none;
   }
 
   .peopleContainer {
@@ -142,6 +222,7 @@
   }
 
   .greenUpArrow {
+    display: block;
     padding-left: 2.4rem;
     transform: rotate(180deg);
   }
@@ -167,6 +248,7 @@
   }
 
   .info {
+    display: block;
     padding-left: 2rem;
   }
 }
