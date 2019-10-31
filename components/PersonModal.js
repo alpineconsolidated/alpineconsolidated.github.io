@@ -1,12 +1,8 @@
 import styles from "./PersonModal.modules.css";
-import close from "../static/images/close.svg";
 
 const PersonModal = props => {
   return (
     <div className={styles.container}>
-      <div onClick={props.hidePersonModal} className={styles.closeModalIcon}>
-        <img src={close} />
-      </div>
       <div>
         <div className={styles.path}>
           <img src={props.path} />

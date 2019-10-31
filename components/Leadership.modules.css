@@ -2,9 +2,9 @@
   position: relative;
 }
 
-.personModalContainer {
+/* .personModalContainer {
   position: relative;
-}
+} */
 
 .path {
   position: absolute;
@@ -38,6 +38,13 @@
 
 .hidden {
   display: none;
+}
+
+.closeModalIcon {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  cursor: pointer;
 }
 
 @media all and (max-width: 540px) {

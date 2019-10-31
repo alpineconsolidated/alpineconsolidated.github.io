@@ -105,7 +105,7 @@ const Index = props => (
         </div>
       </div>
     </section>
-    <section className="black">
+    <section style={{ position: "relative" }} className="black">
       <Leadership />
     </section>
     <section className={`${styles.advisorsSection}`}>

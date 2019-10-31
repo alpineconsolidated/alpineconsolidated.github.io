@@ -3,21 +3,16 @@
   margin: 4rem 0 20rem 3rem;
 }
 
-.closeModalIcon {
-  position: absolute;
-  top: -9rem;
-  right: -6rem;
-  cursor: pointer;
-}
-
 .path {
   position: absolute;
-  bottom: -20rem;
+  bottom: -25rem;
   left: -13rem;
 }
 
 .personWrapper {
   display: flex;
+  position: relative;
+  max-width: 92rem;
 }
 
 .image {
@@ -32,4 +27,32 @@
   font-size: 24px;
   letter-spacing: 0.8px;
   line-height: 32px;
+}
+
+@media all and (max-width: 1200px) {
+  .personWrapper {
+    flex-direction: column;
+    max-width: 72rem;
+  }
+
+  .image {
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+}
+
+@media all and (max-width: 1024) {
+  .container {
+    margin: 0;
+    margin-bottom: 20rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .path {
+    top: -14rem;
+  }
+  .container {
+    margin-bottom: 4rem;
+  }
 }
