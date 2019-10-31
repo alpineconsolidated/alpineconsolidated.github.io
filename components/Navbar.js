@@ -64,7 +64,7 @@ class Navbar extends React.Component {
                 </Link>
               </li>
               <li className={styles.menuItem}>
-                <a href="#contact">Contact us</a>
+                <a href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -97,7 +97,7 @@ class Navbar extends React.Component {
                 </Link>
               </li>
               <li className={styles.menuItem}>
-                <a href="#contact">Contact us</a>
+                <a href="#contact">Contact Us</a>
               </li>
             </ul>
           </div>
