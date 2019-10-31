@@ -51,10 +51,10 @@ class Navbar extends React.Component {
                 </Link>
               </li>
               <li className={styles.menuItem}>
-                <Link href="/alpinetec">
+                <Link href="/TEC">
                   <a
                     className={
-                      this.props.router.route === "/alpinetec"
+                      this.props.router.route === "/TEC"
                         ? styles.active
                         : ""
                     }
@@ -84,10 +84,10 @@ class Navbar extends React.Component {
                 </Link>
               </li>
               <li className={styles.menuItem}>
-                <Link href="/alpinetec">
+                <Link href="/TEC">
                   <a
                     className={
-                      this.props.router.route === "/alpinetec"
+                      this.props.router.route === "/TEC"
                         ? styles.active
                         : ""
                     }
