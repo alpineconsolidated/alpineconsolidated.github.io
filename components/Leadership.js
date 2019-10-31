@@ -17,9 +17,9 @@ const people = [
     name: "Elan Blutinger",
     position: "Founder & CEO",
     description:
-      "founded Alpine in 1996. Through Alpine he subsequently founded, built and IPO’d multiple public technology and travel companies. Elan is a former Director of Great Wolf Resorts, Hotels.com, and Chairman/CEO of AudioNow Holdings his most recent tech exit. Elan is an entrepreneur, investor, and speaks 5 languages.",
+      "founded Alpine in 1996. Through Alpine he subsequently founded, built and IPO’d multiple public technology and travel companies. He is a former Director of Great Wolf Resorts, Hotels.com, and Chairman/CEO of AudioNow Holdings his most recent tech exit. Elan is an entrepreneur, investor, and speaks 5 languages.",
     fullDescription:
-      "founded Alpine in 1996. Through Alpine he subsequently founded, built and IPO’d multiple public technology and travel companies. Elan is a former Director of Great Wolf Resorts, Hotels.com, and Chairman/CEO of AudioNow Holdings his most recent tech exit. Elan is an entrepreneur, investor, and speaks 5 languages."
+      "founded Alpine in 1996. Through Alpine he subsequently founded, built and IPO’d multiple public technology and travel companies. He is a former Director of Great Wolf Resorts, Hotels.com, and Chairman/CEO of AudioNow Holdings his most recent tech exit. Elan is an entrepreneur, investor, and speaks 5 languages."
   },
 
   {
@@ -28,9 +28,9 @@ const people = [
     name: "Marcel Barbulescu",
     position: "Chief Strategy Officer",
     description:
-      "is a leading and recognized technologist in the field of AI, software engineering, and telecommunications. He is the recipient of multiple awards on the use of Artificial Intelligence (AI) and learning agents for security and military applications. He has a M.Sc. Ph.D. ABD in Computer Science from George Mason, and a degree from the Polytechnica University in Romania.",
+      "is a leading and recognized technologist in the field of AI, software engineering, and telecommunications. He is the recipient of multiple awards on the use of Artificial Intelligence (AI) and learning agents for security and military applications. Marcel has a M.Sc. and a Ph.D. ABD in Computer Science from George Mason.",
     fullDescription:
-      "is a leading and recognized technologist in the field of AI, software engineering, and telecommunications. He is the recipient of multiple awards on the use of Artificial Intelligence (AI) and learning agents for security and military applications. He has a M.Sc. Ph.D. ABD in Computer Science from George Mason, and a degree from the Polytechnica University in Romania."
+      "is a leading and recognized technologist in the field of AI, software engineering, and telecommunications. He is the recipient of multiple awards on the use of Artificial Intelligence (AI) and learning agents for security and military applications. Marcel has a M.Sc. and a Ph.D. ABD in Computer Science from George Mason."
   },
   {
     image: mike,
@@ -38,9 +38,9 @@ const people = [
     name: "Mike Sands",
     position: "Chief Investment Officer",
     description:
-      "was most recently co-founder and CEO of Signal, an enterprise SaaS martech company. Mike was part of the original Orbitz management team and held the positions of CMO and COO. Mike took the business from start-up to IPO, and through two acquisitions (Cendant and Blackstone). Mike was a director of Angie's List & Youbet and a partner at PE firm The Pritzker Group.",
+      "was most recently co-founder and CEO of Signal, an enterprise SaaS martech company. He was part of the original Orbitz management team and held the positions of CMO and COO. Mike took the business from start-up to IPO, and through two acquisitions (Cendant and Blackstone). He was a director of Angie's List & Youbet and a partner at PE firm The Pritzker Group.",
     fullDescription:
-      "was most recently co-founder and CEO of Signal, an enterprise SaaS martech company. Mike was part of the original Orbitz management team and held the positions of CMO and COO. Mike took the business from start-up to IPO, and through two acquisitions (Cendant and Blackstone). Mike was a director of Angie's List & Youbet and a partner at PE firm The Pritzker Group."
+      "was most recently co-founder and CEO of Signal, an enterprise SaaS martech company. He was part of the original Orbitz management team and held the positions of CMO and COO. Mike took the business from start-up to IPO, and through two acquisitions (Cendant and Blackstone). He was a director of Angie's List & Youbet and a partner at PE firm The Pritzker Group."
   },
   {
     image: tom,
@@ -48,9 +48,9 @@ const people = [
     name: "Tom Isaacson",
     position: "Chief IP Legal Counsel",
     description:
-      "is an equity shareholder at Polsinelli P.C. Thomas understands the intricacies associated with new technologies, and provides clients with effective patent management and protection. Tom focuses on patent and trademark prosecution and litigation, and serves a range of clients, including Fortune 100 companies to start-ups. He is the named inventor on 18 patents.",
+      "is an equity shareholder at Polsinelli P.C. He understands the intricacies associated with new technologies, and provides clients with effective patent management and protection. Tom focuses on patent and trademark prosecution and litigation, and serves a range of clients, including Fortune 100 companies to start-ups. He is the named inventor on 18 patents.",
     fullDescription:
-      "is an equity shareholder at Polsinelli P.C. Thomas understands the intricacies associated with new technologies, and provides clients with effective patent management and protection. Tom focuses on patent and trademark prosecution and litigation, and serves a range of clients, including Fortune 100 companies to start-ups. He is the named inventor on 18 patents."
+      "is an equity shareholder at Polsinelli P.C. He understands the intricacies associated with new technologies, and provides clients with effective patent management and protection. Tom focuses on patent and trademark prosecution and litigation, and serves a range of clients, including Fortune 100 companies to start-ups. He is the named inventor on 18 patents."
   }
 ];
 
