@@ -47,7 +47,7 @@ const people = [
   {
     image: tom,
     pathOffset: "-24rem",
-    name: "Tom Isaacso",
+    name: "Tom Isaacson",
     position: "Chief IP Legal Counsel and Advisory Board member",
     description:
       "founded Alpine in 1996.  Through Alpine he subsequently founded, built and IPO’d multiple public technology and travel companies.  Elan is a former Director of Great Wolf Resorts, Hotels.com […]",
