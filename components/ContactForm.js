@@ -10,6 +10,10 @@ const ContactForm = ({ status, errors, touched, isSubmitting, logo }) => {
   return (
     <>
       <div className={styles.container}>
+        <span
+          style={{ position: "absolute", top: "-10rem" }}
+          id="contact"
+        ></span>
         <div className={styles.logo}>
           <img src={logo} />
         </div>
