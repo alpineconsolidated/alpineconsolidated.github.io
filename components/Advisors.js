@@ -1,4 +1,4 @@
-import ReactDOM from "react-dom";
+import { throttle } from "lodash-es";
 
 import styles from "./Advisors.modules.css";
 import greenDownArrow from "../static/images/greenDownArrow.svg";
@@ -160,20 +160,34 @@ class Advisors extends React.Component {
   }
 
   componentDidMount() {
+    window.addEventListener("resize", this.updateAdvisorCoordinates);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateAdvisorCoordinates);
+  }
+
+  updateAdvisorCoordinates = throttle(() => {
     const advisors = this.state.advisors.map(advisor => {
       if (
         this.myRef[advisor.name].getBoundingClientRect().x >
-        window.innerWidth / 2
+        window.innerWidth / 2.3
       ) {
         return {
           name: advisor.name,
           info: advisor.info,
           isOffset: true
         };
-      } else return advisor;
+      }
+      return {
+        name: advisor.name,
+        info: advisor.info,
+        isOffset: false
+      };
     });
+
     this.setState({ advisors });
-  }
+  }, 100);
 
   showAdvisorModal = e => {
     const target = this.state.advisors.filter(
@@ -197,6 +211,7 @@ class Advisors extends React.Component {
   };
 
   render() {
+    console.log("updated");
     return (
       <div>
         <div className={styles.sectionTitle}>

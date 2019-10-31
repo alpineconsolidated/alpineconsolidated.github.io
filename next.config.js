@@ -2,11 +2,18 @@
 const withPlugins = require("next-compose-plugins");
 const withCSS = require("@zeit/next-css");
 const withImages = require("next-images");
+const withTM = require("next-transpile-modules");
 require("dotenv").config();
 
 module.exports = withPlugins(
   [
     [withImages],
+    [
+      withTM,
+      {
+        transpileModules: ["lodash-es"]
+      }
+    ],
     [
       withCSS,
       {
