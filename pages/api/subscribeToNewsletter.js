@@ -1,6 +1,10 @@
 const md5 = require("md5");
 const fetch = require("isomorphic-fetch");
 
+const dataCenter = process.env.MAILCHIMP_DATA_CENTER;
+const audienceId = process.env.MAILCHIMP_AUDIENCE_ID;
+const apiKey = process.env.MAILCHIMP_API_KEY;
+
 export default async function subscribeToNewsletter(req, res) {
   const email = req.body.email;
   const emailHash = md5(email.toLowerCase());
@@ -19,11 +23,11 @@ export default async function subscribeToNewsletter(req, res) {
 const checkNewsletterSubscriber = async email => {
   try {
     const res = await fetch(
-      `https://us3.api.mailchimp.com/3.0/lists/9e35cf42df/members/${email}`,
+      `https://${dataCenter}.api.mailchimp.com/3.0/lists/${audienceId}/members/${email}`,
       {
         method: "GET",
         headers: {
-          Authorization: "apiKey 9c5ab3db130c9919bc70ba07bf146644-us3"
+          Authorization: apiKey
         }
       }
     );
@@ -37,11 +41,11 @@ const checkNewsletterSubscriber = async email => {
 const postNewsletterSubscriber = async data => {
   try {
     const res = await fetch(
-      `https://us3.api.mailchimp.com/3.0/lists/9e35cf42df/members`,
+      `https://${dataCenter}.api.mailchimp.com/3.0/lists/${audienceId}/members`,
       {
         method: "POST",
         headers: {
-          Authorization: "apiKey 9c5ab3db130c9919bc70ba07bf146644-us3",
+          Authorization: apiKey,
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
