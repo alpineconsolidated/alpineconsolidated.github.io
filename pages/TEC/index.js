@@ -13,6 +13,18 @@ import triangle5 from "../../static/images/triangle5.svg";
 import logoAlpineTEC from "../../static/images/AlpineTEC_V.svg";
 
 class AlpineTEC extends React.Component {
+  constructor(props) {
+    super(props);
+    this.sectionRef = React.createRef();
+  }
+
+  scrollToSection = () => {
+    this.sectionRef.current.scrollIntoView({
+      block: "start",
+      behavior: "smooth"
+    });
+  };
+
   render() {
     return (
       <Page>
@@ -20,14 +32,18 @@ class AlpineTEC extends React.Component {
           <title>Alpine TEC</title>
         </Head>
         <section className={`${styles.hero} black`}>
-          <Hero />
+          <Hero scrollToSection={this.scrollToSection} />
         </section>
 
         <section className="whiteTEC">
           <Testimonial />
         </section>
 
-        <section className="whiteTEC">
+        <section style={{ position: "relative" }} className="whiteTEC">
+          <span
+            ref={this.sectionRef}
+            style={{ position: "absolute", top: "-40px" }}
+          />
           <LetterBox />
         </section>
 

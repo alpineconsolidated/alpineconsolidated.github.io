@@ -27,8 +27,15 @@ class Hero extends Component {
             </p>
 
             <div className={styles.buttons}>
-              <Button hashLink="#contact" text="CONTACT US" contact />
-              <Button text="LEARN MORE" />
+              <button className={`${styles.btnFull} ${styles.btn}`}>
+                <a href="#contact"> CONTACT US</a>{" "}
+              </button>
+              <button
+                className={`${styles.btnEmpty} ${styles.btn}`}
+                onClick={() => this.props.scrollToSection()}
+              >
+                LEARN MORE
+              </button>
             </div>
           </div>
         </div>
