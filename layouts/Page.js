@@ -22,6 +22,16 @@ class Page extends React.Component {
             name="viewport"
             content="initial-scale=1, maximum-scale=1, user-scalable=no"
           />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href={
+              this.props.router.route === "/"
+                ? "../static/images/faviconA-32x32.png"
+                : "../static/images/favicon-32x32.png"
+            }
+          />
         </Head>
         <Navbar
           logo={this.props.router.route === "/" ? logoAlpine : logoAlpineTEC}
