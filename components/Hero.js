@@ -27,7 +27,7 @@ class Hero extends Component {
             </p>
 
             <div className={styles.buttons}>
-              <Button text="CONTACT US" contact />
+              <Button hashLink="#contact" text="CONTACT US" contact />
               <Button text="LEARN MORE" />
             </div>
           </div>

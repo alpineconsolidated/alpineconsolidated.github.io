@@ -14,7 +14,7 @@ class Hero extends Component {
             </h1>
             <h4>We help founders build their dreams and scale for success</h4>
             <div className={styles.buttons}>
-              <Button text="CONTACT US" contact />
+              <Button hashLink="#contact" text="CONTACT US" contact />
               <Button text="LEARN MORE" />
             </div>
           </div>

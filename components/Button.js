@@ -9,7 +9,11 @@ function Button(props) {
         styles.btn
       }`}
     >
-      {props.text}
+      {props.hashLink ? (
+        <a href={props.hashLink}>{props.text}</a>
+      ) : (
+        `${props.text}`
+      )}
     </button>
   );
 }
