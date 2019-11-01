@@ -22,6 +22,7 @@
 
 .companyName {
   font-family: "montserratbold";
+  cursor: pointer;
 }
 
 @media all and (max-width: 968px) {

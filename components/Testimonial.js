@@ -22,7 +22,9 @@ const Testimonial = () => {
           <h5>Daniel Markovits</h5>
           <p>
             Director of Engineering @{" "}
-            <span className={styles.companyName}>[e-spres-oh]</span>
+            <a href="https://www.e-spres-oh.com" target="_blank">
+              <span className={styles.companyName}>[e-spres-oh]</span>
+            </a>
           </p>
         </div>
       </div>
