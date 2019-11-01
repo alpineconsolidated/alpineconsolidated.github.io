@@ -109,7 +109,13 @@ const ContactForm = ({ status, errors, touched, isSubmitting, logo }) => {
       <div className={styles.footer}>
         <p>
           Designed and developed by{" "}
-          <span className={styles.highlight}>[e-spres-oh]</span>
+          <a
+            style={{ cursor: "pointer" }}
+            href="https://www.e-spres-oh.com"
+            target="_blank"
+          >
+            <span className={styles.highlight}>[e-spres-oh]</span>
+          </a>
         </p>
         <p>©Alpine Consolidated, 2019</p>
       </div>
