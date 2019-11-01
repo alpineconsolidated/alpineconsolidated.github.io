@@ -16,7 +16,9 @@ class AlpineTEC extends React.Component {
   render() {
     return (
       <Page>
-        <Head>AlpineTEC</Head>
+        <Head>
+          <title>Alpine TEC</title>
+        </Head>
         <section className={`${styles.hero} black`}>
           <Hero />
         </section>

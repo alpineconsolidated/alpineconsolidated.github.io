@@ -25,12 +25,12 @@ const PersonCard = props => {
       </h2>
       <h5 className={styles.position}>{props.person.position}</h5>
       <p className={styles.description}>{props.person.description}</p>
-{/*   <button
+      <button
         onClick={() => props.showPersonModal(props.person)}
         className={styles.readMoreBtn}
       >
         READ MORE
-      </button> */}
+      </button>
     </div>
   );
 };
