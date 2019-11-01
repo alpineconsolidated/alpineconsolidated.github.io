@@ -52,7 +52,7 @@ class AlpineTEC extends React.Component {
                   <span className="noWrap">LOOKING FOR</span>
                 </h1>
                 <h3>
-                  We are most interested in SaaS companies and tech enabled
+                  We are most interested in SaaS companies and tech-enabled
                   services business or digital transformation opportunities in
                   more traditional situations.
                 </h3>
@@ -64,9 +64,10 @@ class AlpineTEC extends React.Component {
                   </div>
                 </div>
                 <p>
-                  We are most interested in SaaS companies and tech enabled
-                  services business or digital transformation opportunities in
-                  more traditional situations.
+                  Our team has experience across a broad number of sectors. We
+                  want to rely on the entrepreneur to provide the domain
+                  knowledge while we lean in on the technology and help with the
+                  go-to-market.
                 </p>
               </div>
             </div>

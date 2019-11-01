@@ -15,7 +15,8 @@ const Map = () => {
           <div className={styles.address}>
             <img src={location}></img>
             <p>
-              <span className={styles.locationText}>Headquered in</span> <br />
+              <span className={styles.locationText}>Headquartered in</span>{" "}
+              <br />
               <span className={styles.highlight}>Washington DC</span>
             </p>
           </div>
