@@ -45,9 +45,9 @@ const Index = props => (
             </div>
 
             <p>
-              Since 1996, Alpine Consolidated and its team have structured, led
+              Since 1996, Alpine Consolidated and its team have structured, led,
               and delivered multiple initial public offerings and exits in the
-              US and the UK delivering outsized returns to investors and
+              US and the UK, delivering outsized returns to investors and
               successful exits every time. It has created new industry leaders
               in fragmented industries by backing disciplined and practical
               innovators that have redefined business for the 21st century.
@@ -79,7 +79,7 @@ const Index = props => (
               Resortquest International (NYSE: RZT), Hotels.Com (NASDAQ: ROOM),
               Online Travel Corp (LSE:OTC), Great Wolf Resorts (NYSE: WOLF),
               Orbitz (NASDAQ: ORBZ), YouBet (NASDAQ: UBET) and Angie’s List
-              (NASDAQ: ANGI). Our privately held ventures include Vacationlink
+              (NASDAQ: ANGI). Our privately-held ventures include Vacationlink
               (acquired by Kinderhook Industries), AudioNow (acquired by Zeno
               Media), Espresoh Technologies (acquired by Alpine Consolidated)
               SIM Partners (acquired by Reputation.com), Signal and ParkWhiz.
@@ -89,7 +89,7 @@ const Index = props => (
             <p>
               We are seasoned investors and executives with deep management
               experience who do more than invest capital. We are “all in” for
-              the Entrepreneurs we support and provide critical services so our
+              the Entrepreneurs, we support and provide critical services so our
               ventures can focus on product development and sales.    
             </p>
           </div>

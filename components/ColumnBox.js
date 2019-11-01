@@ -19,17 +19,17 @@ const ColumnBox = () => {
             Capital is a commodity... We will do more
           </h3>
           <p>
-            At Alpine we can bring technologists, sales expertise and management
-            assistance to our portfolio. Whatever our partner companies need to
-            scale
+            At Alpine, we can bring technologists, sales expertise, and
+            management assistance to our portfolio. Whatever our partner
+            companies need to scale.
           </p>
         </div>
         <div className={`${styles.textBox} box-third`}>
           <h3 className={styles.subtitle}>Entrepreneurship is our passion</h3>
           <p>
-            At our core we are entrepreneurs first and investors second. We have
-            walked in your shoes. We have each founded companies, raised money
-            and had sleepless nights. We get it.
+            At our core, we are entrepreneurs first and investors second. We
+            have walked in your shoes. We have each founded companies, raised
+            money, and had sleepless nights. We get it.
           </p>
         </div>
         <div className={`${styles.textBox} box-third`}>
@@ -38,7 +38,7 @@ const ColumnBox = () => {
           </h3>
           <p>
             Our focus is helping our entrepreneurs realize their ambitions and
-            find their exit. When we invest we want to work with you on your
+            find their exit. When we invest, we want to work with you on your
             exit strategy from day one, helping scale for a purpose and with an
             outcome in mind.
           </p>

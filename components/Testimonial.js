@@ -15,7 +15,7 @@ const Testimonial = () => {
             “Alpine has been an amazing partner. They rolled up their sleeves
             and immediately started to help scale our company bringing new
             customers and a pipeline of new opportunities. They stepped into
-            management roles when we need help and their capital and sales
+            management roles when we needed help, and their capital and sales
             expertise were instrumental in retaining and attracting our highly
             skilled engineers who are excited by the influx of new projects.”
           </p>
