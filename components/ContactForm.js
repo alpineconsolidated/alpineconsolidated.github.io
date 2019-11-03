@@ -10,15 +10,15 @@ const ContactForm = ({ status, errors, touched, isSubmitting, logo }) => {
   return (
     <>
       <div className={styles.container}>
-        <span
-          style={{ position: "absolute", top: "-10rem" }}
-          id="contact"
-        ></span>
         <div className={styles.logo}>
           <img src={logo} />
         </div>
-        <div className="column-grid">
+        <div style={{ position: "relative" }} className="column-grid">
           <div className="box-half">
+            <span
+              style={{ position: "absolute", top: "-11rem" }}
+              id="contact"
+            ></span>
             <div className={styles.textContainer}>
               <h1>CONTACT</h1>
               <p>

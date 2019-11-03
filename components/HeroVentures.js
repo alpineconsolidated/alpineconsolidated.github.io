@@ -14,9 +14,11 @@ class Hero extends Component {
             </h1>
             <h4>We help founders build their dreams and scale for success</h4>
             <div className={styles.buttons}>
-              <button className={`${styles.btnFull} ${styles.btn}`}>
-                <a href="#contact"> CONTACT US</a>{" "}
-              </button>
+              <a href="#contact">
+                <button className={`${styles.btnFull} ${styles.btn}`}>
+                  CONTACT US
+                </button>
+              </a>
               <button
                 className={`${styles.btnEmpty} ${styles.btn}`}
                 onClick={() => this.props.scrollToSection()}
