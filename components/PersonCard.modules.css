@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: flex-start;
   flex: 0 1 25rem;
-  margin-bottom: 5rem;
   position: relative;
+  padding-right: 2rem;
 }
 
 .path {
@@ -14,7 +14,6 @@
 
 .image {
   position: relative;
-  cursor: pointer;
 }
 
 .name {
@@ -22,7 +21,6 @@
   font-family: "montserratbold";
   letter-spacing: 0.8px;
   line-height: 29px;
-  cursor: pointer;
 }
 
 .position {
@@ -40,7 +38,7 @@
   line-height: 2rem;
   margin-bottom: 2.4rem;
 }
-
+/* 
 .readMoreBtn {
   background-color: transparent;
   color: #2cc84d;
@@ -51,7 +49,7 @@
   letter-spacing: 0.47px;
   line-height: 1.7rem;
   cursor: pointer;
-}
+} */
 
 @media all and (min-width: 540px) {
   .path {

@@ -2,10 +2,6 @@
   position: relative;
 }
 
-/* .personModalContainer {
-  position: relative;
-} */
-
 .path {
   position: absolute;
   top: -2rem;
@@ -23,7 +19,7 @@
   flex-wrap: wrap;
 }
 
-.visible {
+/* .visible {
   display: block;
   height: 100%;
   width: 100%;
@@ -45,7 +41,7 @@
   top: 4rem;
   right: 4rem;
   cursor: pointer;
-}
+} */
 
 @media all and (max-width: 540px) {
   .peopleContainer {

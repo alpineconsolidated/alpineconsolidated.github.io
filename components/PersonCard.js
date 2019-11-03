@@ -12,25 +12,10 @@ const PersonCard = props => {
           <img src={path} />
         </div>
       </div>
-      <img
-        onClick={() => props.showPersonModal(props.person)}
-        className={styles.image}
-        src={props.person.image}
-      ></img>
-      <h2
-        onClick={() => props.showPersonModal(props.person)}
-        className={styles.name}
-      >
-        {props.person.name}
-      </h2>
+      <img className={styles.image} src={props.person.image}></img>
+      <h2 className={styles.name}>{props.person.name}</h2>
       <h5 className={styles.position}>{props.person.position}</h5>
       <p className={styles.description}>{props.person.description}</p>
-      <button
-        onClick={() => props.showPersonModal(props.person)}
-        className={styles.readMoreBtn}
-      >
-        READ MORE
-      </button>
     </div>
   );
 };
