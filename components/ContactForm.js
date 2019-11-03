@@ -117,7 +117,7 @@ const ContactForm = ({ status, errors, touched, isSubmitting, logo }) => {
             <span className={styles.highlight}>[e-spres-oh]</span>
           </a>
         </p>
-        <p>©Alpine Consolidated, 2019</p>
+        <p>{`©Alpine Consolidated, ${new Date().getFullYear()}`}</p>
       </div>
     </>
   );
