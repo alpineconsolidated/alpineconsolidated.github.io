@@ -1,7 +1,3 @@
-.leadershipContainer {
-  position: relative;
-}
-
 .path {
   position: absolute;
   top: -2rem;
@@ -43,7 +39,7 @@
   cursor: pointer;
 } */
 
-@media all and (max-width: 540px) {
+@media all and (max-width: 768px) {
   .peopleContainer {
     justify-content: center;
   }

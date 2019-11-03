@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex: 0 1 25rem;
+  flex: 0 1 27rem;
   position: relative;
-  padding-right: 2rem;
+  padding: 0 1rem;
 }
 
 .path {
@@ -36,22 +36,49 @@
   font-size: 1.3rem;
   letter-spacing: 0.43px;
   line-height: 2rem;
-  margin-bottom: 2.4rem;
 }
-/* 
-.readMoreBtn {
-  background-color: transparent;
-  color: #2cc84d;
-  border: none;
-  padding: 0;
-  font-family: "montserratblack";
-  font-size: 1.4rem;
-  letter-spacing: 0.47px;
-  line-height: 1.7rem;
-  cursor: pointer;
-} */
 
-@media all and (min-width: 540px) {
+@media all and (max-width: 1420px) {
+  .container {
+    flex: 0 1 24rem;
+  }
+}
+
+@media all and (max-width: 1275px) {
+  .container {
+    flex: 1 1 35rem;
+  }
+
+  .container:first-child {
+    margin-bottom: 6rem;
+  }
+
+  .container:nth-of-type(odd) {
+    padding-right: 2rem;
+  }
+
+  .container:nth-of-type(even) {
+    padding-left: 2rem;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .container {
+    flex: 1 1 30rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    flex: 1 1 32rem;
+    margin-bottom: 6rem;
+  }
+  .container:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media all and (min-width: 768px) {
   .path {
     display: none;
   }
