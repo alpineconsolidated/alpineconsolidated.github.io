@@ -8,7 +8,7 @@
 .container {
   display: flex;
   justify-content: space-between;
-  height: 12rem;
+  height: 9rem;
   align-items: center;
 }
 
@@ -88,15 +88,11 @@
 }
 
 .spacer {
-  height: 12rem;
+  height: 9rem;
   width: 100%;
 }
 
 @media all and (max-width: 1024px) {
-  .container {
-    height: 10.8rem;
-  }
-
   .menu {
     display: none;
   }
@@ -105,11 +101,16 @@
     position: fixed;
     z-index: 100;
     width: 100%;
-    transform: translateY(-10.8rem);
+    transform: translateY(-9rem);
     display: block;
     text-align: center;
     background-color: #fff;
     animation: slide-down-div 0.6s ease forwards;
+  }
+
+  .closingMenu.mobileMenu {
+    transform: translateY(9rem);
+    animation: slide-up-div 0.6s ease forwards;
   }
 
   .mobileMenu ul {
@@ -131,13 +132,19 @@
   }
 
   .spacer {
-    height: 10rem;
+    height: 9rem;
   }
 }
 
 @keyframes slide-down-div {
   100% {
-    transform: translateY(10.8rem);
+    transform: translateY(9rem);
+  }
+}
+
+@keyframes slide-up-div {
+  100% {
+    transform: translateY(-9rem);
   }
 }
 

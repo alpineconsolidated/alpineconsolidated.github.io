@@ -7,12 +7,21 @@ class Navbar extends React.Component {
     menuVisible: false,
     closing: false
   };
+
   onMenuClick = () => {
-    this.setState({
-      closing: !this.state.closing,
-      menuVisible: !this.state.menuVisible
-    });
+    const { menuVisible, closing } = this.state;
+    if (closing) return;
+
+    if (!menuVisible) {
+      this.setState({ menuVisible: true });
+    } else {
+      this.setState({ closing: true });
+      setTimeout(() => {
+        this.setState({ closing: false, menuVisible: false });
+      }, 300);
+    }
   };
+
   render() {
     return (
       <>
@@ -24,17 +33,17 @@ class Navbar extends React.Component {
             <div onClick={this.onMenuClick} className={styles.burgerMenu}>
               <div
                 className={`${styles.menuLine} ${
-                  this.state.closing ? styles.closing : ""
+                  this.state.menuVisible ? styles.closing : ""
                 }`}
               ></div>
               <div
                 className={`${styles.menuLine} ${
-                  this.state.closing ? styles.closing : ""
+                  this.state.menuVisible ? styles.closing : ""
                 }`}
               ></div>
               <div
                 className={`${styles.menuLine} ${
-                  this.state.closing ? styles.closing : ""
+                  this.state.menuVisible ? styles.closing : ""
                 }`}
               ></div>
             </div>
@@ -54,9 +63,7 @@ class Navbar extends React.Component {
                 <Link href="/TEC">
                   <a
                     className={
-                      this.props.router.route === "/TEC"
-                        ? styles.active
-                        : ""
+                      this.props.router.route === "/TEC" ? styles.active : ""
                     }
                   >
                     AlpineTEC Ventures
@@ -70,7 +77,11 @@ class Navbar extends React.Component {
           </div>
         </nav>
         {this.state.menuVisible && (
-          <div className={styles.mobileMenu}>
+          <div
+            className={`${this.state.closing ? styles.closingMenu : ""} ${
+              styles.mobileMenu
+            }`}
+          >
             <ul>
               <li className={styles.menuItem}>
                 <Link href="/">
@@ -87,16 +98,14 @@ class Navbar extends React.Component {
                 <Link href="/TEC">
                   <a
                     className={
-                      this.props.router.route === "/TEC"
-                        ? styles.active
-                        : ""
+                      this.props.router.route === "/TEC" ? styles.active : ""
                     }
                   >
                     AlpineTEC Ventures
                   </a>
                 </Link>
               </li>
-              <li className={styles.menuItem}>
+              <li onClick={this.onMenuClick} className={styles.menuItem}>
                 <a href="#contact">Contact Us</a>
               </li>
             </ul>

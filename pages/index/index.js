@@ -36,7 +36,7 @@ class Index extends React.Component {
         <section style={{ position: "relative" }} className={`white`}>
           <span
             ref={this.firstFoldRef}
-            style={{ position: "absolute", top: "-120px" }}
+            style={{ position: "absolute", top: "-90px" }}
           />
           <div className="column-grid">
             <div className="hideOnSmallTablet box-half">
