@@ -60,6 +60,12 @@
   z-index: -1;
 }
 
+@media all and (max-width: 1024px) {
+  .hero {
+    min-height: inherit;
+  }
+}
+
 @media all and (max-width: 968px) {
   .imageContainer {
     justify-content: center;

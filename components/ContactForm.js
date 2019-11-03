@@ -90,7 +90,7 @@ const ContactForm = ({ status, errors, touched, isSubmitting, logo }) => {
                   <p>Submitting...</p>
                 </div>
               ) : status.success ? (
-                <h3>{status.msg}</h3>
+                <h3 className={styles.successMessage}>{status.msg}</h3>
               ) : (
                 <div className={styles.contactBtnContainer}>
                   <Button type="submit" text="CONTACT US" contact>

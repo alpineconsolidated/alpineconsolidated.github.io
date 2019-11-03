@@ -44,6 +44,13 @@
   position: relative;
 }
 
+.successMessage {
+  font-size: 2rem;
+  font-family: "montserratbold";
+  letter-spacing: 0.8px;
+  line-height: 2.9rem;
+}
+
 .errorMessage {
   position: absolute;
   font-size: 1.2rem;

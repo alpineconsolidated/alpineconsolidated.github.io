@@ -20,11 +20,11 @@ class Hero extends Component {
               <br />
               <span style={{ whiteSpace: "nowrap" }}>COMPANY SINCE 1996</span>
             </h1>
-            <p className={styles.text}>
+            <h4 className={styles.text}>
               An unparalleled history of successful investor returns by
               capitalizing, growing, and exiting unique business models in
               industries few could envision.
-            </p>
+            </h4>
 
             <div className={styles.buttons}>
               <button className={`${styles.btnFull} ${styles.btn}`}>
