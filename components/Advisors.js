@@ -175,11 +175,14 @@ class Advisors extends React.Component {
     this.myRef = [];
     this.personModalRefs = [];
     this.peopleContainer = React.createRef();
+    this.sectionRef = React.createRef();
   }
 
   componentDidMount() {
     window.addEventListener("resize", this.getPageInnerWidth);
     window.addEventListener("resize", this.updateAdvisorCoordinates);
+    window.addEventListener("scroll", this.updateAdvisorCoordinates);
+
     this.getPageInnerWidth();
     this.updateAdvisorCoordinates();
   }
@@ -187,6 +190,7 @@ class Advisors extends React.Component {
   componentWillUnmount() {
     window.removeEventListener("resize", this.getPageInnerWidth);
     window.removeEventListener("resize", this.updateAdvisorCoordinates);
+    window.removeEventListener("scroll", this.updateAdvisorCoordinates);
   }
 
   getPageInnerWidth = throttle(() => {
@@ -195,28 +199,36 @@ class Advisors extends React.Component {
 
   updateAdvisorCoordinates = throttle(() => {
     const advisors = this.state.advisors.map(advisor => {
-      // if (
-      //   window.innerHeight -
-      //     this.myRef[advisor.name].getBoundingClientRect().y <
-      //   window.innerHeight / 2.5
-      // ) {
-      //   return {
-      //     name: advisor.name,
-      //     info: advisor.info,
-      //     isOffset: true,
-      //     yCoordinate: this.myRef[advisor.name].getBoundingClientRect().y,
-      //     elementHeight: this.myRef[advisor.name].getBoundingClientRect().height
-      //   };
-      // }
-      return {
-        name: advisor.name,
-        info: advisor.info,
-        isOffset: false,
-        yCoordinate: this.myRef[advisor.name].getBoundingClientRect().y,
-        elementHeight: this.myRef[advisor.name].getBoundingClientRect().height,
-        modalHeight: this.personModalRefs[advisor.name].getBoundingClientRect()
-          .height
-      };
+      if (
+        this.personModalRefs[advisor.name].getBoundingClientRect().height +
+          this.myRef[advisor.name].getBoundingClientRect().y +
+          this.myRef[advisor.name].getBoundingClientRect().height +
+          40 <
+        window.innerHeight
+      ) {
+        return {
+          name: advisor.name,
+          info: advisor.info,
+          isOffset: false,
+          yCoordinate: this.myRef[advisor.name].getBoundingClientRect().y,
+          advisorNameHeight: this.myRef[advisor.name].getBoundingClientRect()
+            .height,
+          modalHeight: this.personModalRefs[
+            advisor.name
+          ].getBoundingClientRect().height
+        };
+      } else
+        return {
+          name: advisor.name,
+          info: advisor.info,
+          isOffset: true,
+          yCoordinate: this.myRef[advisor.name].getBoundingClientRect().y,
+          advisorNameHeight: this.myRef[advisor.name].getBoundingClientRect()
+            .height,
+          modalHeight: this.personModalRefs[
+            advisor.name
+          ].getBoundingClientRect().height
+        };
     });
 
     this.setState({
@@ -247,18 +259,24 @@ class Advisors extends React.Component {
 
   render() {
     return (
-      <div>
+      <div ref={this.sectionRef}>
         <div className={styles.sectionTitle}>
           <h1>ADVISORS</h1>
         </div>
         <div ref={this.peopleContainer} className={styles.peopleContainer}>
           {this.state.advisors.map(person => {
-            console.log(person.modalHeight);
             const top =
               person.yCoordinate -
               this.state.container_yCoordinate +
-              person.elementHeight +
-              10;
+              person.advisorNameHeight +
+              44;
+
+            const reverseTop =
+              person.yCoordinate -
+              this.state.container_yCoordinate -
+              person.advisorNameHeight -
+              person.modalHeight;
+            10;
 
             return (
               <div
@@ -301,30 +319,10 @@ class Advisors extends React.Component {
                 ) : (
                   ""
                 )}
-                {/* {person.showInfo && (
-                  <div
-                    className={
-                      person.isOffset
-                        ? styles.infoTabletReverse
-                        : styles.infoTablet
-                    }
-                  >
-                    {" "}
-                    <img
-                      className={
-                        person.isOffset
-                          ? styles.reverseBlackTriangle
-                          : styles.blackTriangle
-                      }
-                      src={blackSmallTriangle}
-                    />
-                    <h4 className={styles.infoTablet_name}>{person.name}</h4>
-                    <p>{person.info}</p>
-                  </div>
-                )} */}
+
                 <div
                   style={{
-                    top: `${top}px`
+                    top: `${person.isOffset ? reverseTop : top}px`
                   }}
                   ref={ref => {
                     this.personModalRefs[person.name] = ref;
@@ -345,3 +343,27 @@ class Advisors extends React.Component {
 }
 
 export default Advisors;
+
+{
+  /* {person.showInfo && (
+                  <div
+                    className={
+                      person.isOffset
+                        ? styles.infoTabletReverse
+                        : styles.infoTablet
+                    }
+                  >
+                    {" "}
+                    <img
+                      className={
+                        person.isOffset
+                          ? styles.reverseBlackTriangle
+                          : styles.blackTriangle
+                      }
+                      src={blackSmallTriangle}
+                    />
+                    <h4 className={styles.infoTablet_name}>{person.name}</h4>
+                    <p>{person.info}</p>
+                  </div>
+                )} */
+}

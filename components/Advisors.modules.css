@@ -45,10 +45,18 @@
 
 .blackTriangle {
   visibility: hidden;
+  position: absolute;
+  transform: rotate(90deg);
+  top: calc(100% + 1rem);
+  left: calc(15%);
 }
 
 .reverseBlackTriangle {
   visibility: hidden;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: calc(-100%);
+  left: calc(15%);
 }
 
 @media all and (min-width: 1025px) {
@@ -67,23 +75,7 @@
     left: 0;
   }
 
-  .reversePersonModal {
-    visibility: hidden;
-    position: absolute;
-    z-index: 1;
-    background-color: #13100e;
-    color: #fff;
-    width: 32rem;
-    padding: 4rem 3rem;
-    transform: translateY(calc(-50% + 19px));
-    left: calc(-100% - 20rem);
-  }
-
   .personContainer:hover .personModal {
-    visibility: visible;
-  }
-
-  .personContainer:hover .reversePersonModal {
     visibility: visible;
   }
 
@@ -99,17 +91,10 @@
 
   .personContainer:hover .blackTriangle {
     visibility: visible;
-    position: absolute;
-    transform: rotate(90deg);
-    top: calc(100% - 2.4rem);
-    left: calc(15%);
   }
 
-  .reverseBlackTriangle {
-    visibility: hidden;
-    position: absolute;
-    transform: rotate(-90deg);
-    top: calc(-100% - 2.4rem);
+  .personContainer:hover .reverseBlackTriangle {
+    visibility: visible;
   }
 }
 
