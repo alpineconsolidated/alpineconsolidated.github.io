@@ -8,8 +8,9 @@ const LetterBox = () => {
         <div className={`${styles.textContainer} box-half`}>
           <div>
             <h1>
-              AlpineTEC IS <br />
-              THE DIFFERENCE
+              AlpineTEC
+              <br /> IS THE <br />
+              DIFFERENCE
             </h1>
             <h3>
               At AlpineTEC Ventures we bring a unique combination of Technology,
@@ -30,7 +31,7 @@ const LetterBox = () => {
           <h1 className={styles.bigLetter}>T</h1>
 
           <div className={styles.textContent}>
-            <h2 className={styles.title}>TECH</h2>
+            <h2 className={styles.title}>TECHNOLOGY</h2>
             <p>
               Alpine employs technology resources including engineers and
               architects, UI/UX and design experts capable of rapid prototyping

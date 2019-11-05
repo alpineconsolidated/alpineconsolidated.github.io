@@ -16,7 +16,9 @@ const ColumnBox = () => {
       <div className="column-grid">
         <div className={`${styles.textBox} box-third`}>
           <h3 className={styles.subtitle}>
-            Capital is a commodity... We will do more
+            Capital is a commodity...
+            <br />
+            We will do more
           </h3>
           <p>
             At Alpine, we can bring technologists, sales expertise, and
