@@ -10,16 +10,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  position: relative;
 }
 
 .personContainer {
-  position: relative;
   display: flex;
   min-width: 17.2rem;
   margin-bottom: 6.8rem;
 }
 
 .person {
+  position: relative;
   max-width: 10rem;
   cursor: pointer;
   pointer-events: none;
@@ -42,6 +43,14 @@
   display: none;
 }
 
+.blackTriangle {
+  visibility: hidden;
+}
+
+.reverseBlackTriangle {
+  visibility: hidden;
+}
+
 @media all and (min-width: 1025px) {
   .personContainer:hover .name {
     color: #2cc84d;
@@ -52,11 +61,10 @@
     position: absolute;
     z-index: 1;
     background-color: #13100e;
+    width: 100%;
     color: #fff;
-    width: 32rem;
-    padding: 4rem 3rem;
-    transform: translateY(calc(-50% + 19px));
-    left: calc(100%);
+    padding: 3rem;
+    left: 0;
   }
 
   .reversePersonModal {
@@ -86,20 +94,22 @@
     letter-spacing: 0.8px;
     line-height: 2.9rem;
     margin-bottom: 1.6rem;
-    max-width: 10rem;
+    min-width: 20rem;
   }
 
-  .blackTriangle {
+  .personContainer:hover .blackTriangle {
+    visibility: visible;
     position: absolute;
-    top: calc(50% - (3.4rem / 2));
-    left: -3.3rem;
+    transform: rotate(90deg);
+    top: calc(100% - 2.4rem);
+    left: calc(15%);
   }
 
   .reverseBlackTriangle {
+    visibility: hidden;
     position: absolute;
-    top: calc(50% - (3.4rem / 2));
-    right: -3.3rem;
-    transform: rotate(180deg);
+    transform: rotate(-90deg);
+    top: calc(-100% - 2.4rem);
   }
 }
 
@@ -117,7 +127,6 @@
   }
 
   .personContainer {
-    position: relative;
     cursor: pointer;
   }
 

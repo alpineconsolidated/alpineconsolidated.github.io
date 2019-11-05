@@ -8,19 +8,16 @@ import close from "../static/images/close.svg";
 const advisors = [
   {
     name: "ADAM MCGOWAN",
-    showInfo: false,
     info:
       "Director of Business Strategy and Development at CISCO, a former VP of Investment banking at McNamee Lawrence and Sr. Manager at Cap Gemini. His sweet spot is the intersection of strategy, finance, and technology.  His diverse career includes investment banking, corporate finance, corporate strategy, and strategy consulting. Adam has helped numerous senior management teams and boards of directors with their corporate growth strategies.  Adam received an MBA from Yale, a Master’s of Engineering from MIT and a BS from Virginia Tech."
   },
   {
     name: "ALAN MELTZER",
-    showInfo: false,
     info:
       "Founded The Meltzer Group in 1982 as a single insurance agent and has since grown the company to one with over 200 dedicated employees across five divisions. Alan was inducted into the Washington Business Hall of Fame in 2011, the same year The Gazette newspapers named him one of the “25 CEOs You Need to Know.”. As one of the top corporate philanthropists in the Washington metropolitan area, Alan has served on the Board of Directors for numerous organizations, including Juvenile Diabetes Research Foundation, Wolf Trap Foundation, For Love of Children, United Jewish Endowment Fund, Junior Achievement, K. Neal International Trucks, Jewish Federation Executive Committee and the Washington Hospital Center Foundation."
   },
   {
     name: "CHRISTOPHER ENSLEY",
-    showInfo: false,
     info:
       "Managing Director of technology, media & telecom (TMT) investment banking at Noble Financial Capital Markets. While on Wall Street, Mr. Ensley has participated in over $16B in transactions. Prior to Noble, Mr. Ensley was a banker at Coady Diemar Partners, a boutique investment bank in NYC, a Managing Director in equity research at Bear Stearns, a Vice President of equity research at Lazard and began his Wall Street career in equity research at Salomon. He received an MBA from Vanderbilt University and a BA from the College of William & Mary."
   },
@@ -170,8 +167,14 @@ const advisors = [
 class Advisors extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { advisors: advisors, pageWidth: "" };
+    this.state = {
+      advisors: advisors,
+      pageWidth: "",
+      container_yCoordinate: ""
+    };
     this.myRef = [];
+    this.personModalRefs = [];
+    this.peopleContainer = React.createRef();
   }
 
   componentDidMount() {
@@ -192,24 +195,35 @@ class Advisors extends React.Component {
 
   updateAdvisorCoordinates = throttle(() => {
     const advisors = this.state.advisors.map(advisor => {
-      if (
-        this.myRef[advisor.name].getBoundingClientRect().x >
-        window.innerWidth / 2.3
-      ) {
-        return {
-          name: advisor.name,
-          info: advisor.info,
-          isOffset: true
-        };
-      }
+      // if (
+      //   window.innerHeight -
+      //     this.myRef[advisor.name].getBoundingClientRect().y <
+      //   window.innerHeight / 2.5
+      // ) {
+      //   return {
+      //     name: advisor.name,
+      //     info: advisor.info,
+      //     isOffset: true,
+      //     yCoordinate: this.myRef[advisor.name].getBoundingClientRect().y,
+      //     elementHeight: this.myRef[advisor.name].getBoundingClientRect().height
+      //   };
+      // }
       return {
         name: advisor.name,
         info: advisor.info,
-        isOffset: false
+        isOffset: false,
+        yCoordinate: this.myRef[advisor.name].getBoundingClientRect().y,
+        elementHeight: this.myRef[advisor.name].getBoundingClientRect().height,
+        modalHeight: this.personModalRefs[advisor.name].getBoundingClientRect()
+          .height
       };
     });
 
-    this.setState({ advisors });
+    this.setState({
+      advisors,
+      container_yCoordinate: this.peopleContainer.current.getBoundingClientRect()
+        .y
+    });
   }, 100);
 
   showAdvisorModal = e => {
@@ -237,8 +251,15 @@ class Advisors extends React.Component {
         <div className={styles.sectionTitle}>
           <h1>ADVISORS</h1>
         </div>
-        <div className={styles.peopleContainer}>
+        <div ref={this.peopleContainer} className={styles.peopleContainer}>
           {this.state.advisors.map(person => {
+            console.log(person.modalHeight);
+            const top =
+              person.yCoordinate -
+              this.state.container_yCoordinate +
+              person.elementHeight +
+              10;
+
             return (
               <div
                 key={person.name}
@@ -266,14 +287,6 @@ class Advisors extends React.Component {
                   <div className={styles.name}>
                     <h5>{person.name}</h5>
                   </div>
-                </div>
-                <div
-                  className={
-                    person.isOffset
-                      ? styles.reversePersonModal
-                      : styles.personModal
-                  }
-                >
                   <img
                     className={
                       person.isOffset
@@ -282,15 +295,13 @@ class Advisors extends React.Component {
                     }
                     src={blackSmallTriangle}
                   />
-                  <h4 className={styles.personModal_name}>{person.name}</h4>
-                  <p>{person.info}</p>
                 </div>
                 {person.showInfo ? (
                   <p className={styles.info}>{person.info}</p>
                 ) : (
                   ""
                 )}
-                {person.showInfo && (
+                {/* {person.showInfo && (
                   <div
                     className={
                       person.isOffset
@@ -310,7 +321,20 @@ class Advisors extends React.Component {
                     <h4 className={styles.infoTablet_name}>{person.name}</h4>
                     <p>{person.info}</p>
                   </div>
-                )}
+                )} */}
+                <div
+                  style={{
+                    top: `${top}px`
+                  }}
+                  ref={ref => {
+                    this.personModalRefs[person.name] = ref;
+                    return true;
+                  }}
+                  className={styles.personModal}
+                >
+                  <h4 className={styles.personModal_name}>{person.name}</h4>
+                  <p>{person.info}</p>
+                </div>
               </div>
             );
           })}
