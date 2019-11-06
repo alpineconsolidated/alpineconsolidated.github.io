@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .textBox {
   position: relative;
   z-index: 1;
@@ -54,6 +60,9 @@
 }
 
 @media all and (max-width: 540px) {
+  .container {
+    min-height: 38rem;
+  }
   .buttons {
     display: block;
   }
