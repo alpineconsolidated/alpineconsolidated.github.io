@@ -49,6 +49,7 @@ const checkNewsletterSubscriber = async (email, route) => {
 };
 
 const postNewsletterSubscriber = async data => {
+  const key = data.route === "alpine" ? apiKey : apiKey_TEC;
   try {
     const res = await fetch(
       `https://${
@@ -59,7 +60,7 @@ const postNewsletterSubscriber = async data => {
       {
         method: "POST",
         headers: {
-          Authorization: data.route === "alpine" ? apiKey : apiKey_TEC,
+          Authorization: key,
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
