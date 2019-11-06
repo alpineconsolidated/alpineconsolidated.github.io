@@ -41,7 +41,7 @@ const ContactForm = ({
               </p>
             </div>
             <div className="hideOnSmallTablet">
-              <Newsletter page={route} />
+              <Newsletter route={route} />
             </div>
           </div>
           <div className={`box-half`}>
@@ -108,7 +108,7 @@ const ContactForm = ({
               )}
             </Form>
             <div className={`${styles.newsletterContainer} showOnSmallTablet`}>
-              <Newsletter page={route} />
+              <Newsletter route={route} />
             </div>
           </div>
         </div>
