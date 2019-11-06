@@ -199,8 +199,9 @@
     position: relative;
     display: block;
     padding-left: 2.4rem;
-    /* transform: rotate(180deg); */
+    transform: rotate(180deg);
     pointer-events: none;
+    z-index: 1;
   }
 
   .black {
