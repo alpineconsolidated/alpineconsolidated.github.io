@@ -59,6 +59,16 @@
   left: calc(15%);
 }
 
+.personModal_name {
+  color: #2cc84d;
+  font-family: "montserratextrabold";
+  font-size: 2.4rem;
+  letter-spacing: 0.8px;
+  line-height: 2.9rem;
+  margin-bottom: 1.6rem;
+  min-width: 20rem;
+}
+
 @media all and (min-width: 1025px) {
   .personContainer:hover .name {
     color: #2cc84d;
@@ -77,16 +87,6 @@
 
   .personContainer:hover .personModal {
     visibility: visible;
-  }
-
-  .personModal_name {
-    color: #2cc84d;
-    font-family: "montserratextrabold";
-    font-size: 2.4rem;
-    letter-spacing: 0.8px;
-    line-height: 2.9rem;
-    margin-bottom: 1.6rem;
-    min-width: 20rem;
   }
 
   .personContainer:hover .blackTriangle {
@@ -123,52 +123,23 @@
     color: #2cc84d;
   }
 
-  .infoTablet {
+  .showPersonModal.personModal {
+    display: block;
     position: absolute;
     z-index: 1;
     background-color: #13100e;
+    width: 100%;
     color: #fff;
-    width: 32rem;
-    padding: 4rem 3rem;
-    top: calc(100% + 4rem);
+    padding: 3rem;
     left: 0;
-    transform: translateX(-3.2rem);
   }
 
-  .infoTabletReverse {
-    position: absolute;
-    z-index: 1;
-    background-color: #13100e;
-    color: #fff;
-    width: 32rem;
-    padding: 4rem 3rem;
-    top: calc(100% + 4rem);
-    right: 0;
-    transform: translateX(-3.2rem);
+  .showBlackTriangle.blackTriangle {
+    visibility: visible;
   }
 
-  .infoTablet_name {
-    color: #2cc84d;
-    font-family: "montserratextrabold";
-    font-size: 2.4rem;
-    letter-spacing: 0.8px;
-    line-height: 2.9rem;
-    margin-bottom: 1.6rem;
-    max-width: 10rem;
-  }
-
-  .blackTriangle {
-    position: absolute;
-    top: -3.3rem;
-    left: 3.2rem;
-    transform: rotate(90deg);
-  }
-
-  .reverseBlackTriangle {
-    position: absolute;
-    top: -3.3rem;
-    right: 3.2rem;
-    transform: rotate(90deg);
+  .showBlackTriangle.reverseBlackTriangle {
+    visibility: visible;
   }
 }
 
@@ -183,6 +154,18 @@
 }
 
 @media all and (max-width: 580px) {
+  .showPersonModal.personModal {
+    display: none;
+  }
+
+  .showBlackTriangle.blackTriangle {
+    visibility: hidden;
+  }
+
+  .showBlackTriangle.reverseBlackTriangle {
+    visibility: hidden;
+  }
+
   .sectionTitle {
     margin-bottom: 4rem;
   }
@@ -219,6 +202,7 @@
     display: block;
     padding-left: 2.4rem;
     transform: rotate(180deg);
+    pointer-events: none;
   }
 
   .black {

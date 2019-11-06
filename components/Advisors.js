@@ -3,7 +3,6 @@ import { throttle } from "lodash-es";
 import styles from "./Advisors.modules.css";
 import greenDownArrow from "../static/images/greenDownArrow.svg";
 import blackSmallTriangle from "../static/images/blackSmallTriangle.svg";
-import close from "../static/images/close.svg";
 
 const advisors = [
   {
@@ -306,11 +305,14 @@ class Advisors extends React.Component {
                     <h5>{person.name}</h5>
                   </div>
                   <img
-                    className={
-                      person.isOffset
-                        ? styles.reverseBlackTriangle
-                        : styles.blackTriangle
-                    }
+                    className={`
+                    ${person.showInfo ? styles.showBlackTriangle : ""}
+                      ${
+                        person.isOffset
+                          ? styles.reverseBlackTriangle
+                          : styles.blackTriangle
+                      } 
+                    `}
                     src={blackSmallTriangle}
                   />
                 </div>
@@ -328,7 +330,9 @@ class Advisors extends React.Component {
                     this.personModalRefs[person.name] = ref;
                     return true;
                   }}
-                  className={styles.personModal}
+                  className={`${
+                    person.showInfo ? styles.showPersonModal : ""
+                  } ${styles.personModal}`}
                 >
                   <h4 className={styles.personModal_name}>{person.name}</h4>
                   <p>{person.info}</p>
@@ -343,27 +347,3 @@ class Advisors extends React.Component {
 }
 
 export default Advisors;
-
-{
-  /* {person.showInfo && (
-                  <div
-                    className={
-                      person.isOffset
-                        ? styles.infoTabletReverse
-                        : styles.infoTablet
-                    }
-                  >
-                    {" "}
-                    <img
-                      className={
-                        person.isOffset
-                          ? styles.reverseBlackTriangle
-                          : styles.blackTriangle
-                      }
-                      src={blackSmallTriangle}
-                    />
-                    <h4 className={styles.infoTablet_name}>{person.name}</h4>
-                    <p>{person.info}</p>
-                  </div>
-                )} */
-}
