@@ -96,6 +96,7 @@
   .hero {
     background-position: 0 0;
     background-size: cover;
+    min-height: 52rem;
   }
 
   .advisorsSection {

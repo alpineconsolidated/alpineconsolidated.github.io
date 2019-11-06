@@ -62,8 +62,13 @@
     margin-bottom: 1.6rem;
     margin-right: 0;
   }
+
   .btn:nth-child(2) {
     margin-bottom: 0;
+  }
+
+  .textBox h4 {
+    margin-bottom: 6rem;
   }
 }
 @media all and (max-width: 370px) {

@@ -43,14 +43,8 @@
 
 @media all and (max-width: 540px) {
   .hero {
-    background-position: -200% 0;
-    background-size: cover;
-  }
-}
-
-@media all and (max-width: 370px) {
-  .hero {
     background-position: -50% 0;
     background-size: cover;
+    min-height: 52rem;
   }
 }

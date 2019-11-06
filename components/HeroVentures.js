@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styles from "./Hero.modules.css";
-import Button from "./Button";
 
 class Hero extends Component {
   render() {
