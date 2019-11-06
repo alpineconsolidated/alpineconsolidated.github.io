@@ -58,9 +58,10 @@ export default withFormik({
       success: false
     };
   },
-  async handleSubmit(values, { resetForm, setSubmitting, setStatus }) {
+  async handleSubmit(values, { props, resetForm, setSubmitting, setStatus }) {
     const res = await axios.post("./api/subscribeToNewsletter", {
-      email: values.email
+      email: values.email,
+      route: props.route
     });
     if (res.data.success) {
       setSubmitting(false);

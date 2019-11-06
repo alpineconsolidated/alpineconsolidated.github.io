@@ -19,7 +19,7 @@
 
 @media all and (max-width: 540px) {
   .container {
-    min-height: 38rem;
+    min-height: 40rem;
   }
   .buttons {
     display: block;

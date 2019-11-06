@@ -46,6 +46,7 @@ class Page extends React.Component {
           <div className="box-wide">
             <section className="contactSection">
               <ContactForm
+                route={this.props.router.route === "/" ? "alpine" : "alpineTEC"}
                 logo={
                   this.props.router.route === "/"
                     ? logoAlpine_big

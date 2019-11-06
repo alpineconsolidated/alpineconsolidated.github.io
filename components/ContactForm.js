@@ -6,7 +6,14 @@ import Newsletter from "./Newsletter";
 
 import styles from "./ContactForm.modules.css";
 
-const ContactForm = ({ status, errors, touched, isSubmitting, logo }) => {
+const ContactForm = ({
+  status,
+  errors,
+  touched,
+  isSubmitting,
+  logo,
+  route
+}) => {
   return (
     <>
       <div className={styles.container}>
@@ -34,7 +41,7 @@ const ContactForm = ({ status, errors, touched, isSubmitting, logo }) => {
               </p>
             </div>
             <div className="hideOnSmallTablet">
-              <Newsletter />
+              <Newsletter page={route} />
             </div>
           </div>
           <div className={`box-half`}>
@@ -101,7 +108,7 @@ const ContactForm = ({ status, errors, touched, isSubmitting, logo }) => {
               )}
             </Form>
             <div className={`${styles.newsletterContainer} showOnSmallTablet`}>
-              <Newsletter />
+              <Newsletter page={route} />
             </div>
           </div>
         </div>

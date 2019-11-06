@@ -5,10 +5,16 @@ const dataCenter = process.env.MAILCHIMP_DATA_CENTER;
 const audienceId = process.env.MAILCHIMP_AUDIENCE_ID;
 const apiKey = process.env.MAILCHIMP_API_KEY;
 
+const dataCenter_TEC = process.env.MAILCHIMP_DATA_CENTER_TEC;
+const audienceId_TEC = process.env.MAILCHIMP_AUDIENCE_ID_TEC;
+const apiKey_TEC = process.env.MAILCHIMP_API_KEY_TEC;
+
 export default async function subscribeToNewsletter(req, res) {
   const email = req.body.email;
   const emailHash = md5(email.toLowerCase());
-  const subscriber = await checkNewsletterSubscriber(emailHash);
+  const route = req.body.route;
+
+  const subscriber = await checkNewsletterSubscriber(emailHash, route);
   if (subscriber.status === "subscribed") {
     return res.send({ success: true });
   }
@@ -20,14 +26,18 @@ export default async function subscribeToNewsletter(req, res) {
     : res.send({ success: false });
 }
 
-const checkNewsletterSubscriber = async email => {
+const checkNewsletterSubscriber = async (email, route) => {
   try {
     const res = await fetch(
-      `https://${dataCenter}.api.mailchimp.com/3.0/lists/${audienceId}/members/${email}`,
+      `https://${
+        route === "alpine" ? dataCenter : dataCenter_TEC
+      }.api.mailchimp.com/3.0/lists/${
+        route === "alpine" ? audienceId : audienceId_TEC
+      }/members/${email}`,
       {
         method: "GET",
         headers: {
-          Authorization: apiKey
+          Authorization: route === "alpine" ? apiKey : apiKey_TEC
         }
       }
     );
@@ -41,16 +51,27 @@ const checkNewsletterSubscriber = async email => {
 const postNewsletterSubscriber = async data => {
   try {
     const res = await fetch(
-      `https://${dataCenter}.api.mailchimp.com/3.0/lists/${audienceId}/members`,
+      `https://${
+        data.route === "alpine" ? dataCenter : dataCenter_TEC
+      }.api.mailchimp.com/3.0/lists/${
+        data.route === "alpine" ? audienceId : audienceId_TEC
+      }/members`,
       {
         method: "POST",
         headers: {
-          Authorization: apiKey,
+          Authorization: data.route === "alpine" ? apiKey : apiKey_TEC,
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
           email_address: data.email,
-          status: "subscribed"
+          status: "subscribed",
+          tags: [
+            `${
+              data.route === "alpine"
+                ? "www.alpineconsolidated.com"
+                : "alpineTEC.vc"
+            }`
+          ]
         }),
         json: true
       }
