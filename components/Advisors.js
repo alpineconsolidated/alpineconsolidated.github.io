@@ -197,6 +197,7 @@ class Advisors extends React.Component {
   }, 100);
 
   updateAdvisorCoordinates = throttle(() => {
+    if (window.innerWidth < 540) return;
     const advisors = this.state.advisors.map(advisor => {
       if (
         this.personModalRefs[advisor.name].getBoundingClientRect().height +
