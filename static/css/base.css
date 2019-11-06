@@ -399,3 +399,11 @@ p {
     line-height: 2.6rem;
   }
 }
+
+@media all and (max-width: 540px) {
+  h1 {
+    font-size: 3.2rem;
+    letter-spacing: 1.07px;
+    line-height: 3.8rem;
+  }
+}
