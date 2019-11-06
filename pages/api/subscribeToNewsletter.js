@@ -42,6 +42,7 @@ const checkNewsletterSubscriber = async (email, route) => {
       }
     );
     const json = res.json();
+
     return json;
   } catch (err) {
     return err;
