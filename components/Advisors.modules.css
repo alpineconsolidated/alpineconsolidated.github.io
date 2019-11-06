@@ -193,12 +193,14 @@
   }
 
   .greenDownArrow {
+    position: relative;
     display: block;
     padding-right: 2.4rem;
     pointer-events: none;
   }
 
   .greenUpArrow {
+    position: relative;
     display: block;
     padding-left: 2.4rem;
     transform: rotate(180deg);
