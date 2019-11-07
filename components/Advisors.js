@@ -16,6 +16,11 @@ const advisors = [
       "Founded The Meltzer Group in 1982 as a single insurance agent and has since grown the company to one with over 200 dedicated employees across five divisions. Alan was inducted into the Washington Business Hall of Fame in 2011, the same year The Gazette newspapers named him one of the “25 CEOs You Need to Know.”. As one of the top corporate philanthropists in the Washington metropolitan area, Alan has served on the Board of Directors for numerous organizations, including Juvenile Diabetes Research Foundation, Wolf Trap Foundation, For Love of Children, United Jewish Endowment Fund, Junior Achievement, K. Neal International Trucks, Jewish Federation Executive Committee and the Washington Hospital Center Foundation."
   },
   {
+    name: "CHRISTIAN P. ÁRKAY-LELIEVER",
+    info:
+      "Christian is an award-winning design leader in the restaurant and hospitality industry with a reputation for refined brand experiences. Working as the Director of Strategic Innovation for world-renowned architecture firm Skidmore, Owings & Merrill, he developed his talent for innovation and collaboration amongst many leading companies including Philips, Hansgrohe, and Herman Miller. Having to lead the Products team at Rockwell Group, Christian Árkay-Leliever merged the power of craft, innovation and production techniques to develop award-winning experiences in products and environments. He has authored several patents and much of his work has been featured in shows and publications throughout the world. His exceptional touch can be experienced at some of the notable restaurants including the Rivermarket(Tarrytown, NY), Geronimo (Fairfield, CT), Bar Yoshi (Nantucket, MA) and the Elis Tavern (Milford, CT)."
+  },
+  {
     name: "CHRISTOPHER ENSLEY",
     info:
       "Managing Director of technology, media & telecom (TMT) investment banking at Noble Financial Capital Markets. While on Wall Street, Mr. Ensley has participated in over $16B in transactions. Prior to Noble, Mr. Ensley was a banker at Coady Diemar Partners, a boutique investment bank in NYC, a Managing Director in equity research at Bear Stearns, a Vice President of equity research at Lazard and began his Wall Street career in equity research at Salomon. He received an MBA from Vanderbilt University and a BA from the College of William & Mary."
@@ -116,51 +121,6 @@ const advisors = [
     info:
       "William, 'Bill', Alsup is the Senior Managing Director and Founding Partner of the Hines Washington office. He was the senior officer responsible for the development of City Center, the 1.5 million square feet mixed-use project in the heart of Washington, DC. He has served in a leadership role in the DC Building Industry Association as its president and is a member of the Boards of Directors of the DC Chamber of Commerce, DC Public Library Foundation and the DC Policy Center. He is a recipient of the Urban Land Institute's Lifetime Achievement Award for development and leadership in the Washington, DC area."
   }
-
-  // {
-  //   name: "KIM SCHAEFFER",
-  //   info:
-  //     "President and COO of the Salt Lake Organizing Committee for the 2002 Olympic Winter Games; Managing Director, Sorenson Capital; Former Chairman and Board Member, Omniture,(NASDAQ:OMTR). Co-founder Alpine Consolidated, LLC. Co-founder Travel Services International (NASDAQ:TRVL), and Resortquest International (NYSE:RQI)."
-  // },
-  // {
-  //   name: "IMAD KHALIDI",
-  //   info:
-  //     "President and COO of the Salt Lake Organizing Committee for the 2002 Olympic Winter Games; Managing Director, Sorenson Capital; Former Chairman and Board Member, Omniture,(NASDAQ:OMTR). Co-founder Alpine Consolidated, LLC. Co-founder Travel Services International (NASDAQ:TRVL), and Resortquest International (NYSE:RQI)."
-  // },
-  // {
-  //   name: "JEFFREY POLLACK",
-  //   info:
-  //     "President and COO of the Salt Lake Organizing Committee for the 2002 Olympic Winter Games; Managing Director, Sorenson Capital; Former Chairman and Board Member, Omniture,(NASDAQ:OMTR). Co-founder Alpine Consolidated, LLC. Co-founder Travel Services International (NASDAQ:TRVL), and Resortquest International (NYSE:RQI)."
-  // },
-  // {
-  //   name: "ROBERT KRASNE",
-  //   info:
-  //     "President and COO of the Salt Lake Organizing Committee for the 2002 Olympic Winter Games; Managing Director, Sorenson Capital; Former Chairman and Board Member, Omniture,(NASDAQ:OMTR). Co-founder Alpine Consolidated, LLC. Co-founder Travel Services International (NASDAQ:TRVL), and Resortquest International (NYSE:RQI)."
-  // },
-
-  // {
-  //   name: "JOSH LOWENTHAL",
-  //   info:
-  //     "President and COO of the Salt Lake Organizing Committee for the 2002 Olympic Winter Games; Managing Director, Sorenson Capital; Former Chairman and Board Member, Omniture,(NASDAQ:OMTR). Co-founder Alpine Consolidated, LLC. Co-founder Travel Services International (NASDAQ:TRVL), and Resortquest International (NYSE:RQI)."
-  // },
-
-  // {
-  //   name: "PATRICK KENNEDY",
-  //   info:
-  //     "President and COO of the Salt Lake Organizing Committee for the 2002 Olympic Winter Games; Managing Director, Sorenson Capital; Former Chairman and Board Member, Omniture,(NASDAQ:OMTR). Co-founder Alpine Consolidated, LLC. Co-founder Travel Services International (NASDAQ:TRVL), and Resortquest International (NYSE:RQI)."
-  // },
-
-  // {
-  //   name: "PAUL ZEVNIK",
-  //   info:
-  //     "President and COO of the Salt Lake Organizing Committee for the 2002 Olympic Winter Games; Managing Director, Sorenson Capital; Former Chairman and Board Member, Omniture,(NASDAQ:OMTR). Co-founder Alpine Consolidated, LLC. Co-founder Travel Services International (NASDAQ:TRVL), and Resortquest International (NYSE:RQI)."
-  // },
-
-  // {
-  //   name: "SIMON MARKS",
-  //   info:
-  //     "President and COO of the Salt Lake Organizing Committee for the 2002 Olympic Winter Games; Managing Director, Sorenson Capital; Former Chairman and Board Member, Omniture,(NASDAQ:OMTR). Co-founder Alpine Consolidated, LLC. Co-founder Travel Services International (NASDAQ:TRVL), and Resortquest International (NYSE:RQI)."
-  // },
 ];
 
 class Advisors extends React.Component {
