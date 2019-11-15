@@ -126,6 +126,9 @@ class Index extends React.Component {
           </div>
         </section>
         <section style={{ position: "relative" }} className="black">
+          <span id="leadership" style={{ position: "absolute", top: "-70px" }}>
+            {" "}
+          </span>
           <Leadership />
         </section>
         <section className={`${styles.advisorsSection}`}>
