@@ -256,9 +256,8 @@ class Advisors extends React.Component {
                   <span
                     style={{ position: "absolute", top: "-140px" }}
                     id={`${person.name
-                      .split(" ")
-                      .slice(0, -1)
-                      .join("")}`}
+                      .substr(0, person.name.indexOf(" "))
+                      .toLocaleLowerCase()}`}
                   ></span>
                   <div
                     className={
