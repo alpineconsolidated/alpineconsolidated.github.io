@@ -133,6 +133,9 @@ class Index extends React.Component {
             <img src={moutains} />
           </div>
           <div className={styles.greyBackground} />
+          <span style={{ position: "absolute", top: "-40px" }} id="advisors">
+            {" "}
+          </span>
           <Advisors />
         </section>
       </Page>

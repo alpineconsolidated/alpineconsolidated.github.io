@@ -253,6 +253,13 @@ class Advisors extends React.Component {
                 }`}
               >
                 <div className={styles.person}>
+                  <span
+                    style={{ position: "absolute", top: "-140px" }}
+                    id={`${person.name
+                      .split(" ")
+                      .slice(0, -1)
+                      .join("")}`}
+                  ></span>
                   <div
                     className={
                       person.showInfo
