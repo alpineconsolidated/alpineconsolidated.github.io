@@ -50,11 +50,15 @@ const advisors = [
     info:
       "Hasan has been a senior executive in the telecom industry-leading strategy, product development, pricing, data, and operations management for more than two decades. In the past 15 years, he's held a senior position at Verizon, Verizon Wireless in the US, and Rogers Communications in Canada. Prior to that, he had management positions at KPMG and MCI. He is currently the CEO of HDBUILDS, an innovative real estate development company that uniquely combines a scientific approach to identifying properties suitable for rehabilitation in Washington, DC. He is a graduate of the University of Virginia's Darden School of Management with an MS in Strategy and Finance and its Engineering School with an MS in Electrical Engineering, and the University of Notre Dame where he earned his BS in Electrical Engineering."
   },
-
   {
     name: "JAN ROSENBERG",
     info:
       "Jan is the CEO and founder of Datatility, a leading provider of cloud-based computing in the Washington area. An experienced entrepreneur, Jan has founded, grown, managed and transitioned businesses in diverse verticals. He was President of HRE Inc., a commercial mechanical services contractor in Washington D.C.through its sale to an NYSE company, and an investment banker at the McLean Group, focusing on mergers, acquisitions, and capital formation. In 2000, he was a founding partner and CEO of Zenetex, a leading federal government logistics and IT contractor. Jan was a co-founder of Marlin Financial Services in the UK which was sold to Duke Street Capital, a leading UK private equity firm."
+  },
+  {
+    name: "JEFFREY POLLACK",
+    info:
+      "Jeffrey Pollack is a sports industry veteran who serves the San Diego Chargers as Special Advisor since December 2014. In 1994, Pollack created and launched The Sports Business Daily, the first daily trade publication for the sports industry. Pollack joined the National Basketball Association in 1998 as a strategic communications consultant during collective bargaining with the NBPA and served as the League’s Vice President of Marketing and Corporate Communications. In 2001, he joined NASCAR Digital Entertainment as Managing Director of Broadcasting and New Media. And from 2005-09, he served as President and Commissioner of the World Series of Poker."
   },
   {
     name: "JOHN MEYER",
@@ -87,21 +91,6 @@ const advisors = [
       "Mike manages the day-to-day operations of the PeaceTech Accelerator in Washington, D.C. and oversees C5 Accelerate’s domestic investment portfolio. Prior to joining C5, Mike was Director of the MACH37 Cyber Accelerator and was on the Investment Team at CIT GAP Funds, a non-profit venture capital fund in Herndon, VA. While at CIT, Mike helped launch the EMERGE Accelerator on behalf of the Department of Homeland Security (DHS) Science and Technology Directorate (S&T) and Smart City Works, an accelerator for early-stage startups developing technology for the built environment. Mike began his career as a Research Associate at The Advisory Board Company in Washington, D.C. He holds a BA from the University of Michigan and an MA from American University."
   },
   {
-    name: "SAMMI LEIBOVITZ DECHIARO",
-    info:
-      "Sammi has spent the past ten plus years building brands in the tech/media space, specializing in creative, strategy and user experience both on and offline. Sammi served as Vice President and Creative Director at AOL successfully launching and running several brands in the AOL portfolio. At AOL, Sammi was a founding member and head of MAKERS, the largest collection of women’s stories ever assembled and named by Forbes as one of the 'best websites for women.' Sammi now runs her own brand consultancy and has launched new platforms and experiences for a range of companies and individuals."
-  },
-  {
-    name: "WAYNE RUSCH GARCHIK",
-    info:
-      "President and COO of the Salt Lake Organizing Committee for the 2002 Olympic Winter Games; Managing Director, Sorenson Capital; Former Chairman and Board Member, Omniture,(NASDAQ:OMTR). Co-founder Alpine Consolidated, LLC. Co-founder Travel Services International (NASDAQ:TRVL), and Resortquest International (NYSE:RQI)."
-  },
-  {
-    name: "STEVEN GARCHIK",
-    info:
-      "CEO of SJM Partners, Steve is one of the most successful real estate developers in the US for 32 years. In that time, he and his partners at The Evans Company of McLean, Virginia and subsequently at SJM Partners Inc. of Potomac, Maryland have developed approximately 4,000,000 sq ft of office space, 2,000,000 sq ft of residential properties, 3,000,000 sq ft of self-storage projects, 1,000,000 sq ft of retail space and 500,000 sq ft of industrial product."
-  },
-  {
     name: "RICARDO ERNST",
     info:
       "Baratta Chair in Global Business and Professor of Global Logistics and the former Deputy Dean of the McDonough School of Business, Georgetown University. Weekly Editorial Commentator, CNN Spanish."
@@ -110,6 +99,16 @@ const advisors = [
     name: "RON HOWARD",
     info:
       "CEO of Washington-based Mercury Analytics, a leading online analytics company. Ron is an experienced technology industry entrepreneur. Mr. Howard has been the Founder, President, and CEO of public and private high-tech companies, including Hayes, the world’s first modem communications company, as well as SpeakOut.com, an Internet-based social and Internet-based social media and research organization that developed breakthrough Internet survey technologies. Mr. Howard has a history of hands-on corporate leadership as employee #1 and has served as chief executive of multi-hundred million dollar public and private companies."
+  },
+  {
+    name: "SAMMI LEIBOVITZ DECHIARO",
+    info:
+      "Sammi has spent the past ten plus years building brands in the tech/media space, specializing in creative, strategy and user experience both on and offline. Sammi served as Vice President and Creative Director at AOL successfully launching and running several brands in the AOL portfolio. At AOL, Sammi was a founding member and head of MAKERS, the largest collection of women’s stories ever assembled and named by Forbes as one of the 'best websites for women.' Sammi now runs her own brand consultancy and has launched new platforms and experiences for a range of companies and individuals."
+  },
+  {
+    name: "STEVEN GARCHIK",
+    info:
+      "CEO of SJM Partners, Steve is one of the most successful real estate developers in the US for 32 years. In that time, he and his partners at The Evans Company of McLean, Virginia and subsequently at SJM Partners Inc. of Potomac, Maryland have developed approximately 4,000,000 sq ft of office space, 2,000,000 sq ft of residential properties, 3,000,000 sq ft of self-storage projects, 1,000,000 sq ft of retail space and 500,000 sq ft of industrial product."
   },
   {
     name: "WAYNE RUSCH",
