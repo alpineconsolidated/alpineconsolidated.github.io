@@ -31,6 +31,11 @@ const advisors = [
       "Dan O’Malley is currently President and Chief Operating Officer of Kynect and recently held the same position at Stream Energy which was sold for $300M to NRG on August 1, 2019. Over the course of 3 years, Dan was instrumental in redeveloping the business at Stream and introducing new digital products and services and expanding geographically to new markets. Separately, Dan is an innovator and well-known expert in Fintech and International Remittances. He was President and Executive Vice President of the Americas and Emerging Markets at MoneyGram International for 24 years before leaving the company in 2012. Dan has helped many companies determine their strategic direction and unlock value for stakeholders. Dan currently is an independent director on the board of two privately held financial services companies and participates at various levels with several start-up and mid-stage growth companies as an investor and advisor."
   },
   {
+    name: "DANNY BORTNICK",
+    info:
+      "Since 2012, Danny has served as the Vice President of Sales at CBS Radio in Washington, DC, leading the iconic brand’s revenue-generating activities for both traditional and digital media."
+  },
+  {
     name: "DANTE DESPARTES",
     info:
       "Dante Disparte is the founder and CEO of Risk Cooperative, an innovative global strategy, risk advisory, and insurance brokerage based in Washington, D.C. He is the co-author of the book “Global Risk Agility and Decision Making” and was recently selected as one of the 40 leaders under 40 by the Washington Business Journal and among the top 100 most influential leaders in D.C., in the inaugural Powermeter 100 list. Prior to forming Risk Cooperative, Mr. Disparte served as the managing director of Clements Worldwide, a leading insurance brokerage with customers in more than 170 countries. Mr. Disparte is a specialist in strategy and risk reduction through the design and delivery of comprehensive risk solutions of worldwide scope. Mr. Disparte serves as the chair of the board of the Harvard Business School Club of Washington, D.C., and is a former member of Harvard Business School’s global alumni board. He is the founder and chair of the Business Council for American Security and a board member of the American Security Project. He is a member of the Bretton Woods II Council with New America and on the board of trustees of Gamma Iota Sigma, the preeminent organization dedicated to promoting, encouraging, and sustaining student interest in insurance, risk management, and actuarial science as professions."
@@ -49,6 +54,11 @@ const advisors = [
     name: "HASAN DOSSAL",
     info:
       "Hasan has been a senior executive in the telecom industry-leading strategy, product development, pricing, data, and operations management for more than two decades. In the past 15 years, he's held a senior position at Verizon, Verizon Wireless in the US, and Rogers Communications in Canada. Prior to that, he had management positions at KPMG and MCI. He is currently the CEO of HDBUILDS, an innovative real estate development company that uniquely combines a scientific approach to identifying properties suitable for rehabilitation in Washington, DC. He is a graduate of the University of Virginia's Darden School of Management with an MS in Strategy and Finance and its Engineering School with an MS in Electrical Engineering, and the University of Notre Dame where he earned his BS in Electrical Engineering."
+  },
+  {
+    name: "IMAD KHALIDI",
+    info:
+      "Chief Executive Officer at Auto Europe, LLC, the world’s largest international car rental provider. Mr. Khalidi served as President of Auto Europe, LLC since 1992. Mr. Khalidi served as an International Travel Trade Manager and an International Licensee Manager with Europcar International S.A. from 1983 to 1990 and a Director of Thomas Cook North America (formerly Travel Services International Inc.) since July 1997. He has been recognized as one of the most important executives in the travel industry."
   },
   {
     name: "JAN ROSENBERG",
@@ -76,9 +86,19 @@ const advisors = [
       "Former Chairman and CEO of Avis (NYSE: CAR) Inc. Board Member, United Airlines, (NASDAQ: UAL). Chairman and CEO of Puradyn Filtration (NYSE: PFTI), and past Chairman of Great Wolf Resorts (NYSE: WOLF), Resortquest (NYSE: RQI), and Travel Services International (NASDAQ: TRVL)."
   },
   {
+    name: "JOSH LOWENTHAL",
+    info:
+      "President of FreeConferenceCall.com, responsible for the overall business strategy including all retail and wholesale operations, global expansion strategy, sales and marketing and business development. Josh has been instrumental in helping FreeConferenceCall.com grow exponentially across 70 markets on five continents, connecting more than 40 million callers each month. The company is the most recognized retail brand of conferencing and collaboration services on the planet. He currently serves on the advisory board of directors at Children Today, is a candidate for the California state legislature in the 2018 election cycle, and lives in Huntington Beach, Calif., with his wife and three young daughters."
+  },
+  {
     name: "KATHY KEMPER",
     info:
       "CEO of the Institute for Education in Washington, DC, which promotes leadership and civility locally, nationally, and in the world community. Kathy is Washington’s “Grande Dame,” providing high-level forums for technology entrepreneurs to access know-how, mentoring, and growth resources."
+  },
+  {
+    name: "KIM SCHAEFFER",
+    info:
+      "Former CEO of Great Wolf Resorts, Kim has 18+years of real estate entertainment experience as CEO of Great Wolf Lodge growing it from one cabin to a 15-mega indoor waterpark resorts. Schaefer also played an integral role in the company‚Äôs transition from a public company to a private one. She serves on the board of EdR (NYSE:EDR) ¬†a leader in the ownership, development and management of quality collegiate housing, A CPA by education, Kim started in the lodging industry as controller for a hotel in Madison, Wisconsin and eventually found her way to Great Wolf Lodge. She is a graduate of Edgewood College."
   },
   {
     name: "MIKE BROOKS",
@@ -91,9 +111,24 @@ const advisors = [
       "Mike manages the day-to-day operations of the PeaceTech Accelerator in Washington, D.C. and oversees C5 Accelerate’s domestic investment portfolio. Prior to joining C5, Mike was Director of the MACH37 Cyber Accelerator and was on the Investment Team at CIT GAP Funds, a non-profit venture capital fund in Herndon, VA. While at CIT, Mike helped launch the EMERGE Accelerator on behalf of the Department of Homeland Security (DHS) Science and Technology Directorate (S&T) and Smart City Works, an accelerator for early-stage startups developing technology for the built environment. Mike began his career as a Research Associate at The Advisory Board Company in Washington, D.C. He holds a BA from the University of Michigan and an MA from American University."
   },
   {
+    name: "PATRICK KENNEDY",
+    info:
+      "President of Millennial Strategies LLC, a global strategy and innovation consultancy. During his 15 year career, he has worked with a number of governments, fortune 500 companies, global non-profits, and political candidates in more than 20 countries. Previously, Patrick served as a policy director for former US president Bill Clinton (Clinton School of Public Service) and co-founded the African Leadership in Politics Programme. He is a visiting professor at Sciences Po University in Paris and serves as a contributing reporter for VICE."
+  },
+  {
+    name: "PAUL ZEVNIK",
+    info:
+      "Partner at Morgan, Lewis & Bockius LLP. Mr. Zevnik was the Founder and Managing Partner of Zevnik Horton LLP. He is a Co-founder and Lead Independent Director of Entravision Communications Corporation and has been its Director since August 2000. Mr. Zevnik also serves on various corporate boards of directors of privately held enterprises and on boards and committees of charitable organizations. He has also established and endowed ongoing scholarship programs for Hispanic students at various educational institutions including Harvard University, Boston College, Trinity College, St. Albans School and Phillips Exeter Academy. Mr. Zevnik is admitted to practice in the District of Columbia, California and Pennsylvania and before the U.S. Supreme Court, the U.S. Tax Court, the U.S. District Court for the District of Columbia and the U.S. District Court for the Eastern District of Pennsylvania."
+  },
+  {
     name: "RICARDO ERNST",
     info:
       "Baratta Chair in Global Business and Professor of Global Logistics and the former Deputy Dean of the McDonough School of Business, Georgetown University. Weekly Editorial Commentator, CNN Spanish."
+  },
+  {
+    name: "ROBERT KRASNE",
+    info:
+      "Chairman and Publisher of LNP Media Group, Inc. Lancaster, PA, and the Chairman and CEO of its parent, Steinman Communications, an innovative multi-channel communications company that delivers high quality news, information and entertainment to diverse audiences while providing significant value to their marketing and advertising partners. As founder of the Lancaster County STEM Alliance, Bob, along with a consortium of educational, industry and community leaders seek to make Lancaster County a hub for STEM literacy and experiential learning to help Lancaster County attract and retain visionary job creators and engage all of its citizenry in building a prosperous future. Bob previously practiced law in Washington, D.C. after graduating from Georgetown University and Georgetown University Law Center."
   },
   {
     name: "RON HOWARD",
@@ -104,6 +139,11 @@ const advisors = [
     name: "SAMMI LEIBOVITZ DECHIARO",
     info:
       "Sammi has spent the past ten plus years building brands in the tech/media space, specializing in creative, strategy and user experience both on and offline. Sammi served as Vice President and Creative Director at AOL successfully launching and running several brands in the AOL portfolio. At AOL, Sammi was a founding member and head of MAKERS, the largest collection of women’s stories ever assembled and named by Forbes as one of the 'best websites for women.' Sammi now runs her own brand consultancy and has launched new platforms and experiences for a range of companies and individuals."
+  },
+  {
+    name: "SIMON MARKS",
+    info:
+      "President and Chief Correspondent of Feature Story News, an independent broadcast news agency he co-founded in 1992. Today, with 19 global news bureaus and a full-time team of more than 70 staffers, FSN is the world's leading independent broadcast news agency, supplying on-the-scene reporting for millions of viewers and listeners each day. Headquartered in Washington DC, FSN is the world's fastest-growing broadcast news agency with substantial news-gathering resources across the United States, in Europe, Africa and Latin America."
   },
   {
     name: "STEVEN GARCHIK",
