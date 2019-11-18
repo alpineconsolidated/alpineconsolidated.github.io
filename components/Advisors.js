@@ -36,7 +36,7 @@ const advisors = [
       "Danny is the Vice President of Sales for iHeart Radio. Prior to that he served as the Vice President of Sales at CBS Radio in Washington, DC, leading the iconic brand’s revenue-generating activities for both traditional and digital media."
   },
   {
-    name: "DANTE DESPARTES",
+    name: "DANTE DISPARTE",
     info:
       "Dante Disparte is the Vice Chair of Libra, a blockchain based digital currency based in Geneva. He is the founder and CEO of Risk Cooperative, an innovative global strategy, risk advisory, and insurance brokerage based in Washington, D.C. He is the co-author of the book “Global Risk Agility and Decision Making” and was recently selected as one of the 40 leaders under 40 by the Washington Business Journal and among the top 100 most influential leaders in D.C., in the inaugural Powermeter 100 list. Prior to forming Risk Cooperative, Mr. Disparte served as the managing director of Clements Worldwide, a leading insurance brokerage with customers in more than 170 countries. Mr. Disparte is a specialist in strategy and risk reduction through the design and delivery of comprehensive risk solutions of worldwide scope. Mr. Disparte serves as the chair of the board of the Harvard Business School Club of Washington, D.C., and is a former member of Harvard Business School’s global alumni board. He is the founder and chair of the Business Council for American Security and a board member of the American Security Project. He is a member of the Bretton Woods II Council with New America and on the board of trustees of Gamma Iota Sigma, the preeminent organization dedicated to promoting, encouraging, and sustaining student interest in insurance, risk management, and actuarial science as professions."
   },
