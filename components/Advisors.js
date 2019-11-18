@@ -68,7 +68,7 @@ const advisors = [
   {
     name: "JEFFREY POLLACK",
     info:
-      "Jeffrey Pollack is the President and COO of the XFL. He is a sports industry veteran who served as Special Advisor to the San Diego Chargers from 2014 until 2019. In 1994, Pollack created and launched The Sports Business Daily, the first daily trade publication for the sports industry. Pollack joined the National Basketball Association in 1998 as a strategic communications consultant during collective bargaining with the NBPA and served as the League’s Vice President of Marketing and Corporate Communications. In 2001, he joined NASCAR Digital Entertainment as Managing Director of Broadcasting and New Media. And from 2005-09, he served as President and Commissioner of the World Series of Poker."
+      "Jeffrey Pollack is President and Chief Operating Officer of the XFL. A sports industry veteran and Emmy-Award winner, he began his career in sports in 1994 when he created and launched The Sports Business Daily – the original trade publication for the sports industry. Under his leadership as founding President and Publisher, The Daily became a must-read for sports executives and gave rise to a proliferation of sports business information products and services. In the decades since, Jeffrey has served as an executive, advisor and change agent for the National Basketball Association, NASCAR, the World Series of Poker, Caesars Entertainment, the Professional Bull Riders, Federated Sports + Gaming, the Memphis Grizzlies, the Arizona Coyotes, and the Los Angeles Chargers."
   },
   {
     name: "JOHN MEYER",
