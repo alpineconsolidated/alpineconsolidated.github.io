@@ -22,7 +22,7 @@ const people = [
     name: "Marcel Barbulescu",
     position: "Chief Strategy Officer",
     description:
-      "Marcel is a leading and recognized technologist in the field of AI, software engineering, and telecommunications. He is the recipient of multiple awards on the use of Artificial Intelligence (AI) and learning agents for security and military applications. Marcel has a M.Sc. and a Ph.D. ABD in Computer Science from George Mason."
+      "Marcel is a leading and recognized technologist in the field of AI, software engineering, and telecommunications. He is the recipient of multiple awards on the use of Artificial Intelligence (AI) and learning agents for security and military applications. Marcel has a M.Sc. in Computer Science from George Mason University."
   },
   {
     image: mike,
