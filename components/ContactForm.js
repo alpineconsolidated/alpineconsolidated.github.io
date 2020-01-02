@@ -124,7 +124,7 @@ const ContactForm = ({
             <span className={styles.highlight}>[e-spres-oh]</span>
           </a>
         </p>
-        <p>{`&copy; Alpine Consolidated ${new Date().getFullYear()}`}</p>
+        <p>&copy; Alpine Consolidated {`${new Date().getFullYear()}`}</p>
       </div>
     </>
   );
