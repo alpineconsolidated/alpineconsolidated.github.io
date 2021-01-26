@@ -85,11 +85,11 @@ const advisors = [
     info:
       "Jonathan Akers is the founder and former CEO of Lithium Cycles, an Orange County, California-based e-bike manufacturer which produces and distributes electric bicycles globally. At Lithium Cycles, he led the company to design its first iteration of award-winning electric bicycles before exiting. Jonathan has designed and developed over two dozens products ranging from B2B software to consumer electronics and raised over $1 million in funding on crowdfunding platforms including Kickstarter. He has degrees in Finance and in Engineering from Lehigh University where he served as faculty in the Mechanical Engineering Department teaching Integrated Product Development before relocating to D.C. Jon Akers currently works with a number of early-stage startups in the D.C. area."
   },
-  {
+/*  {
     name: "JOSEPH VITTORIA",
     info:
       "Former Chairman and CEO of Avis (NYSE: CAR) Inc. Board Member, United Airlines, (NASDAQ: UAL). Chairman and CEO of Puradyn Filtration (NYSE: PFTI), and past Chairman of Great Wolf Resorts (NYSE: WOLF), Resortquest (NYSE: RQI), and Travel Services International (NASDAQ: TRVL)."
-  },
+  }, */
   {
     name: "JOSH LOWENTHAL",
     info:
