@@ -1,4 +1,4 @@
-import styles from "./Parallax.modules.css";
+import styles from "./Parallax.module.css";
 
 const Parallax = props => {
   return (

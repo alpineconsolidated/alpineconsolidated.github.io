@@ -1,5 +1,5 @@
 import image from "../static/images/triangle4.png";
-import styles from "./LetterBox.modules.css";
+import styles from "./LetterBox.module.css";
 
 const LetterBox = () => {
   return (

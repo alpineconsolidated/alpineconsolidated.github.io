@@ -1,5 +1,5 @@
 import Link from "next/link";
-import styles from "./Navbar.modules.css";
+import styles from "./Navbar.module.css";
 import { withRouter } from "next/router";
 
 class Navbar extends React.Component {

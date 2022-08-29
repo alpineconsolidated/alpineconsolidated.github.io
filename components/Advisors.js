@@ -1,6 +1,6 @@
 import { throttle } from "lodash-es";
 
-import styles from "./Advisors.modules.css";
+import styles from "./Advisors.module.css";
 import greenDownArrow from "../static/images/greenDownArrow.svg";
 import blackSmallTriangle from "../static/images/blackSmallTriangle.svg";
 

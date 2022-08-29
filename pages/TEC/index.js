@@ -5,7 +5,7 @@ import Testimonial from "../../components/Testimonial";
 import LetterBox from "../../components/LetterBox";
 import ColumnBox from "../../components/ColumnBox";
 import Map from "../../components/Map";
-import styles from "./index.modules.css";
+import styles from "./index.module.css";
 
 import triangle5 from "../../static/images/triangle5.svg";
 

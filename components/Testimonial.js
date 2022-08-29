@@ -1,5 +1,5 @@
 import image from "../static/images/triangle3.png";
-import styles from "./Testimonial.modules.css";
+import styles from "./Testimonial.module.css";
 
 const Testimonial = () => {
   return (

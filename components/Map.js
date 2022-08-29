@@ -1,4 +1,4 @@
-import styles from "./Map.modules.css";
+import styles from "./Map.module.css";
 
 import map from "../static/images/map.svg";
 import location from "../static/images/location.svg";

@@ -1,4 +1,4 @@
-import styles from "./PersonCard.modules.css";
+import styles from "./PersonCard.module.css";
 import path from "../static/images/path.svg";
 
 const PersonCard = props => {

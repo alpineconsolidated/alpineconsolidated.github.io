@@ -3,7 +3,7 @@ import * as Yup from "yup";
 
 import axios from "axios";
 
-import styles from "./Newsletter.modules.css";
+import styles from "./Newsletter.module.css";
 
 const Newsletter = ({ status, errors, touched, isSubmitting }) => {
   return (

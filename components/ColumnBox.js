@@ -1,4 +1,4 @@
-import styles from "./ColumnBox.modules.css";
+import styles from "./ColumnBox.module.css";
 import path from "../static/images/path.svg";
 
 const ColumnBox = () => {

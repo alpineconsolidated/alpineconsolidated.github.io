@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import Button from "../components/Button";
 import Newsletter from "./Newsletter";
 
-import styles from "./ContactForm.modules.css";
+import styles from "./ContactForm.module.css";
 
 const ContactForm = ({
   status,

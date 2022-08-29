@@ -1,5 +1,5 @@
 import PersonCard from "./PersonCard";
-import styles from "./Leadership.modules.css";
+import styles from "./Leadership.module.css";
 
 import elan from "../static/images/elan.svg";
 import marcel from "../static/images/marcel.svg";
