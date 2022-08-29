@@ -1,3 +1,4 @@
+import React from "react";
 import Page from "../../layouts/Page";
 import Head from "next/head";
 import Hero from "../../components/HeroVentures";

@@ -1,3 +1,4 @@
+import React from "react";
 import { throttle } from "lodash-es";
 
 import styles from "./Advisors.module.css";

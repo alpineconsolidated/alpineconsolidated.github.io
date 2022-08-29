@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 import { withRouter } from "next/router";
