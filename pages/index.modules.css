@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  background-image: url("../../static/images/wis.png");
+  background-image: url("../static/images/wis.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 100% 100%;

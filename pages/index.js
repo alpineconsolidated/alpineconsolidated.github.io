@@ -1,15 +1,15 @@
-import Page from "../../layouts/Page";
+import Page from "../layouts/Page";
 import Head from "next/head";
-import Hero from "../../components/Hero";
-import Parallax from "../../components/Parallax";
-import Leadership from "../../components/Leadership";
-import Advisors from "../../components/Advisors";
+import Hero from "../components/Hero";
+import Parallax from "../components/Parallax";
+import Leadership from "../components/Leadership";
+import Advisors from "../components/Advisors";
 
 import styles from "./index.modules.css";
 
-import triangle1 from "../../static/images/triangle1.png";
-import triangle2 from "../../static/images/triangle2.png";
-import moutains from "../../static/images/mountains-advisors.svg";
+import triangle1 from "../static/images/triangle1.png";
+import triangle2 from "../static/images/triangle2.png";
+import moutains from "../static/images/mountains-advisors.svg";
 
 class Index extends React.Component {
   constructor(props) {
