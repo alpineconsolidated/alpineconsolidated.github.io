@@ -85,9 +85,6 @@
     margin: 0;
     margin-bottom: 5.6rem;
   }
-  .newsletterContainer {
-    margin-bottom: 8rem;
-  }
 }
 
 @media all and (max-width: 768px) {

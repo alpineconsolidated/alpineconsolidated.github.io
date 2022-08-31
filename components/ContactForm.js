@@ -2,7 +2,6 @@ import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
 
 import Button from "../components/Button";
-import Newsletter from "./Newsletter";
 
 import styles from "./ContactForm.module.css";
 
@@ -39,9 +38,6 @@ const ContactForm = ({
                   contact@alpineconsolidated.com
                 </span>
               </p>
-            </div>
-            <div className="hideOnSmallTablet">
-              <Newsletter route={route} />
             </div>
           </div>
           <div className={`box-half`}>
@@ -107,9 +103,6 @@ const ContactForm = ({
                 </div>
               )}
             </Form>
-            <div className={`${styles.newsletterContainer} showOnSmallTablet`}>
-              <Newsletter route={route} />
-            </div>
           </div>
         </div>
       </div>
