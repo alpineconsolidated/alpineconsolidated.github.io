@@ -1,5 +1,6 @@
 import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
+import emailjs from "@emailjs/browser";
 
 import Button from "../components/Button";
 
@@ -155,23 +156,14 @@ export default withFormik({
       .ensure("ensure")
   }),
   async handleSubmit(values, { resetForm, setSubmitting, setStatus }) {
-    const res = await fetch("/api/sendEmail", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(values)
-    });
-
-    const response = await res.json();
-
-    if (res.status === 200) {
-      setSubmitting(false);
-      resetForm();
-      setStatus({ success: response.success, msg: response.msg });
-    } else {
-      setSubmitting(false);
-      setStatus({ msg: response.msg });
-    }
+    emailjs.send("service_aux9q8h", "contactform", values, "7JhZZoK59ZPor12pY")
+      .then((result) => {
+        setSubmitting(false);
+        resetForm();
+        setStatus({ success: true, msg: "Message sent successfully." });
+      }, (error) => {
+        setSubmitting(false);
+        setStatus({ msg: error.text });
+      });
   }
 })(ContactForm);
