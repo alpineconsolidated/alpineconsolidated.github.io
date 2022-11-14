@@ -28,7 +28,7 @@
     "dotenv": "^16.0.3",
     "formik": "^2.0.1",
     "lodash-es": "^4.17.15",
-    "next": "^13.0.2",
+    "next": "^13.0.3",
     "next-compose-plugins": "^2.2.0",
     "next-images": "^1.2.0",
     "next-transpile-modules": "^10.0.0",
