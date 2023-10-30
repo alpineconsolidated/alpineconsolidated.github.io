@@ -22,6 +22,7 @@ module.exports = withPlugins(
     ],
   ],
   {
+    output: 'export',
     webpack: config => {
       return config;
     }
