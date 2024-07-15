@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/e-spres-oh/alpine-website-nextjs#readme",
   "dependencies": {
-    "@emailjs/browser": "^4.3.3",
+    "@emailjs/browser": "^4.4.1",
     "dotenv": "^16.4.5",
     "formik": "^2.4.6",
     "lodash-es": "^4.17.15",
