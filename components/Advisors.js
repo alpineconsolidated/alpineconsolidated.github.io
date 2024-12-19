@@ -51,11 +51,13 @@ const advisors = [
     info:
       "President and COO of the Salt Lake Organizing Committee for the 2002 Olympic Winter Games; Managing Director, Sorenson Capital; Former Chairman and Board Member, Omniture,(NASDAQ: OMTR). Co-founder Alpine Consolidated, LLC. Co-founder Travel Services International (NASDAQ: TRVL), and Resortquest International (NYSE: RQI)."
   },
+/*
   {
     name: "FRED MALEK, JR",
     info:
       "Fred is a Washington-based entrepreneur in the lodging and hospitality industry, CEO of Hospitality Benefits, and a Managing Partner of District Hospitality Partners. Prior to District, Fred was the CEO of TIG Global until its sale to Micros Systems, the largest technology provider in the hospitality and restaurant space. He was the co-founder and director of Hubs1, a China-based hotel reservation system. Fred served in the military in the US Navy Special Forces, holds a BS from the US Naval Academy and an MBA from the Wharton School at U Penn."
   },
+*/
   {
     name: "HASAN DOSSAL",
     info:
