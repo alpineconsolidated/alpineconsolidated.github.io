@@ -3,7 +3,7 @@ import styles from "./Leadership.module.css";
 
 import elan from "../static/images/elan.svg";
 import marcel from "../static/images/marcel.svg";
-import mike from "../static/images/mike.svg";
+//import mike from "../static/images/mike.svg";
 import tom from "../static/images/tom.svg";
 import path from "../static/images/path.svg";
 
@@ -24,6 +24,7 @@ const people = [
     description:
       "Marcel is a leading and recognized technologist in the field of AI, software engineering, and telecommunications. He is the recipient of multiple awards on the use of Artificial Intelligence (AI) and learning agents for security and military applications. Marcel has a M.Sc. in Computer Science from George Mason University."
   },
+/*
   {
     image: mike,
     pathOffset: "-21rem",
@@ -32,6 +33,7 @@ const people = [
     description:
       "Mike was most recently co-founder and CEO of Signal, an enterprise SaaS martech company. He was part of the original Orbitz management team and held the positions of CMO and COO. Mike took the business from start-up to IPO, and through two acquisitions (Cendant and Blackstone). He was a director of Angie's List & Youbet and a partner at PE firm The Pritzker Group."
   },
+*/
   {
     image: tom,
     pathOffset: "-24rem",
