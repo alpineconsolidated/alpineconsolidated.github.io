@@ -34,7 +34,7 @@
     "next-transpile-modules": "^10.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "webpack": "^5.99.6",
+    "webpack": "^5.99.7",
     "yup": "^1.6.1"
   }
 }
