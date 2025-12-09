@@ -1,3 +1,5 @@
+import React from "react";
+import Image from "next/image";
 import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
@@ -18,7 +20,7 @@ const ContactForm = ({
     <>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <img src={logo} />
+          <Image src={logo} />
         </div>
         <div style={{ position: "relative" }} className="column-grid">
           <div className="box-half">

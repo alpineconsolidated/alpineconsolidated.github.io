@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Page from "../layouts/Page";
 import Head from "next/head";
 import Hero from "../components/Hero";
@@ -134,7 +135,7 @@ class Index extends React.Component {
         </section>
         <section className={`${styles.advisorsSection}`}>
           <div className={styles.mountains}>
-            <img src={moutains} />
+            <Image src={moutains} />
           </div>
           <div className={styles.greyBackground} />
           <span style={{ position: "absolute", top: "-40px" }} id="advisors">

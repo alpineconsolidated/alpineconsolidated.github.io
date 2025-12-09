@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./Navbar.module.css";
 import { withRouter } from "next/router";
@@ -28,7 +29,7 @@ class Navbar extends React.Component {
       <nav className={`${styles.navbar}`}>
         <div className={`${styles.container} box-wide`}>
           <div className={styles.logo}>
-            <img src={this.props.logo}></img>
+            <Image src={this.props.logo} />
           </div>
           <div onClick={this.onMenuClick} className={styles.burgerMenu}>
             <div

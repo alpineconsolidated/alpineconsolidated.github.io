@@ -1,3 +1,5 @@
+import React from "react";
+import Image from "next/image";
 import styles from "./PersonCard.module.css";
 import path from "../static/images/path.svg";
 
@@ -9,10 +11,10 @@ const PersonCard = props => {
         className={styles.path}
       >
         <div>
-          <img src={path} />
+          <Image src={path} />
         </div>
       </div>
-      <img className={styles.image} src={props.person.image}></img>
+      <Image className={styles.image} src={props.person.image} />
       <h2 className={styles.name}>{props.person.name}</h2>
       <h5 className={styles.position}>{props.person.position}</h5>
       <p className={styles.description}>{props.person.description}</p>

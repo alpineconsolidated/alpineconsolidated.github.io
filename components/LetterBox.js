@@ -1,3 +1,5 @@
+import React from "react";
+import Image from "next/image";
 import image from "../static/images/triangle4.png";
 import styles from "./LetterBox.module.css";
 
@@ -21,7 +23,7 @@ const LetterBox = () => {
         <div className="box-half">
           <div className={`${styles.imageBox}`}>
             <div className={styles.imageContainer}>
-              <img className="responsive-image" src={image} />
+              <Image className="responsive-image" src={image} />
             </div>
           </div>
         </div>

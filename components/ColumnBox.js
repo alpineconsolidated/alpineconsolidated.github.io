@@ -1,3 +1,5 @@
+import React from "react";
+import Image from "next/image";
 import styles from "./ColumnBox.module.css";
 import path from "../static/images/path.svg";
 
@@ -5,7 +7,7 @@ const ColumnBox = () => {
   return (
     <div className={styles.container}>
       <div className={styles.path}>
-        <img src={path} />
+        <Image src={path} />
       </div>
       <div className={styles.title}>
         <h1>

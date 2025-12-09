@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Page from "../../layouts/Page";
 import Head from "next/head";
 import Hero from "../../components/HeroVentures";
@@ -54,7 +55,7 @@ class AlpineTEC extends React.Component {
             <div className="hideOnSmallTablet box-half">
               <div className={styles.imageContainer}>
                 <div className={styles.triangleImage}>
-                  <img className="responsive-image" src={triangle5} />
+                  <Image className="responsive-image" src={triangle5} />
                 </div>
               </div>
             </div>
@@ -73,7 +74,7 @@ class AlpineTEC extends React.Component {
                 <div className="showOnSmallTablet">
                   <div className={styles.imageContainer}>
                     <div className={styles.triangleImage}>
-                      <img className="responsive-image" src={triangle5} />
+                      <Image className="responsive-image" src={triangle5} />
                     </div>
                   </div>
                 </div>

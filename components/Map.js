@@ -1,3 +1,5 @@
+import React from "react";
+import Image from "next/image";
 import styles from "./Map.module.css";
 
 import map from "../static/images/map.svg";
@@ -13,7 +15,7 @@ const Map = () => {
         </div>
         <div className={styles.container}>
           <div className={styles.address}>
-            <img src={location}></img>
+            <Image src={location} />
             <p>
               <span className={styles.locationText}>Headquartered in</span>{" "}
               <br />
@@ -21,14 +23,14 @@ const Map = () => {
             </p>
           </div>
           <div className={styles.address}>
-            <img src={location}></img>
+            <Image src={location} />
             <p>
               <span className={styles.locationText}>Offices in</span> <br />
               <span className={styles.highlight}>Chicago</span>
             </p>
           </div>
           <div className={styles.address}>
-            <img src={locationGreen}></img>
+            <Image src={locationGreen} />
             <p>
               <span className={styles.locationText}>Investments</span> <br />
               <span className={styles.highlight}>Globally</span>
@@ -38,7 +40,7 @@ const Map = () => {
       </div>
       <div className={`${styles.columnRight} box-two-thirds`}>
         <div className={styles.mapContainer}>
-          <img className="responsive-image" src={map} />
+          <Image className="responsive-image" src={map} />
         </div>
       </div>
     </div>

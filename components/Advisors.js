@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { throttle } from "lodash-es";
 
 import styles from "./Advisors.module.css";
@@ -323,12 +324,12 @@ class Advisors extends React.Component {
                         : styles.greenDownArrow
                     }
                   >
-                    <img src={greenDownArrow} />
+                    <Image src={greenDownArrow} />
                   </div>
                   <div className={styles.name}>
                     <h5>{person.name}</h5>
                   </div>
-                  <img
+                  <Image
                     className={`
                     ${person.showInfo ? styles.showBlackTriangle : ""}
                       ${

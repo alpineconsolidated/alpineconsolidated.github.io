@@ -1,3 +1,5 @@
+import React from "react";
+import Image from "next/image";
 import image from "../static/images/triangle3.png";
 import styles from "./Testimonial.module.css";
 
@@ -6,7 +8,7 @@ const Testimonial = () => {
     <div className="column-grid">
       <div className={`${styles.textBox} box-half`}>
         <div className={styles.imageContainer}>
-          <img className="responsive-image" src={image} />
+          <Image className="responsive-image" src={image} />
         </div>
       </div>
       <div className={`${styles.textBox} box-half`}>

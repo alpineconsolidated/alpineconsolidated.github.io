@@ -1,3 +1,5 @@
+import React from "react";
+import Image from "next/image";
 import styles from "./Parallax.module.css";
 
 const Parallax = props => {
@@ -5,7 +7,7 @@ const Parallax = props => {
     <div
       className={props.image.id === "1" ? styles.smallImage : styles.bigImage}
     >
-      <img className="responsive-image" src={props.image.url} />
+      <Image className="responsive-image" src={props.image.url} />
     </div>
   );
 };

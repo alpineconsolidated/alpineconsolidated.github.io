@@ -1,3 +1,5 @@
+import React from "react";
+import Image from "next/image";
 import PersonCard from "./PersonCard";
 import styles from "./Leadership.module.css";
 
@@ -49,7 +51,7 @@ const Leadership = () => {
     <>
       <div className={styles.leadershipContainer}>
         <div className={styles.path}>
-          <img src={path} />
+          <Image src={path} />
         </div>
         <div className={styles.leadershipTitle}>
           <h1>LEADERSHIP</h1>
